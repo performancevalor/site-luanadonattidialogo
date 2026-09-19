@@ -1,0 +1,226 @@
+(function () {
+  const data = window.SITE_DATA;
+  const body = document.body;
+  const root = body.dataset.root || ".";
+  const asset = (path) => `${root}/${path}`;
+  const page = body.dataset.page || "home";
+  const currentYear = new Date().getFullYear();
+
+  const waLink = (message) => `https://wa.me/${data.professional.whatsapp}?text=${encodeURIComponent(message)}`;
+  const generalMessage = `Olá, Luana JD! Vim pelo seu site e gostaria de conversar sobre imóveis em São Paulo.`;
+
+  const navItems = [
+    ["01", "Início", "index.html"],
+    ["02", "Trajetória", "trajetoria.html"],
+    ["03", "Resultados", "resultados.html"],
+    ["04", "Equipe", "equipe.html"],
+    ["05", "Imóveis", "imoveis.html"],
+    ["06", "Faça parte", "trabalhe-comigo.html"],
+    ["07", "Contato", "contato.html"],
+  ];
+
+  const header = document.querySelector("[data-site-header]");
+  if (header) {
+    header.innerHTML = `
+      <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+      <header class="site-header">
+        <a class="brand" href="${asset("index.html")}" aria-label="Luana Donatti — página inicial">
+          <span class="brand-mark" aria-hidden="true">LJD</span>
+          <span class="brand-copy"><strong>Luana Donatti</strong><span>Gerente de Vendas · Diálogo</span></span>
+        </a>
+        <button class="menu-button" type="button" aria-label="Abrir menu" aria-controls="drawer" aria-expanded="false"><i></i><i></i><i></i></button>
+      </header>
+      <div class="drawer-backdrop" data-drawer-close></div>
+      <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Menu principal">
+        <div class="drawer-top">
+          <a class="brand" href="${asset("index.html")}"><span class="brand-mark">LJD</span><span class="brand-copy"><strong>Luana Donatti</strong><span>Gerente de Vendas · Diálogo</span></span></a>
+          <button class="drawer-close" type="button" aria-label="Fechar menu" data-drawer-close>×</button>
+        </div>
+        <nav class="drawer-nav">${navItems.map(([n,label,url]) => `<a href="${asset(url)}"><span>${n}</span>${label}</a>`).join("")}</nav>
+        <div class="drawer-bottom">
+          <strong>Luana JD</strong><br>${data.professional.whatsappDisplay} · ${data.professional.creci}
+          <div class="drawer-social">
+            <a href="${data.professional.instagram}" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="${waLink(generalMessage)}" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+        </div>
+      </aside>`;
+  }
+
+  const footer = document.querySelector("[data-site-footer]");
+  if (footer) {
+    footer.innerHTML = `
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <a class="brand" href="${asset("index.html")}"><span class="brand-mark">LJD</span><span class="brand-copy"><strong>Luana Donatti</strong><span>Gerente de Vendas · Diálogo</span></span></a>
+              <p>14 anos no mercado imobiliário, liderança comercial e atendimento humanizado para compradores, corretores e parceiros.</p>
+              <div class="dialogo-lockup" aria-label="Luana é gerente da Diálogo Engenharia">
+                <img src="https://www.dialogo.com.br/assets/7f5695b2/images/logo-dialogo-2025.svg" alt="Diálogo Engenharia" width="205" height="76">
+              </div>
+            </div>
+            <nav class="footer-links" aria-label="Navegação no rodapé">
+              <strong>Navegue</strong>
+              ${navItems.slice(1).map(([,label,url]) => `<a href="${asset(url)}">${label}</a>`).join("")}
+            </nav>
+            <div class="footer-links">
+              <strong>Converse com a Luana JD</strong>
+              <a href="${waLink(generalMessage)}" target="_blank" rel="noopener noreferrer">${data.professional.whatsappDisplay}</a>
+              <a href="${data.professional.instagram}" target="_blank" rel="noopener noreferrer">${data.professional.instagramHandle}</a>
+              <span>${data.professional.creci}</span>
+              <a href="${asset("politica-de-privacidade.html")}">Privacidade e LGPD</a>
+            </div>
+          </div>
+          <div class="footer-small"><span>© ${currentYear} Luana Donatti. Todos os direitos reservados.</span><span>Empreendimentos sujeitos a confirmação de disponibilidade e condições.</span></div>
+        </div>
+      </footer>
+      <a class="floating-whatsapp" href="${waLink(generalMessage)}" target="_blank" rel="noopener noreferrer" aria-label="Conversar com Luana JD pelo WhatsApp"><img src="${asset("assets/icons/whatsapp.svg")}" alt="" aria-hidden="true"></a>`;
+  }
+
+  const menuButton = document.querySelector(".menu-button");
+  const drawer = document.querySelector(".drawer");
+  let lastFocus = null;
+  const setMenu = (open) => {
+    body.classList.toggle("menu-open", open);
+    menuButton?.setAttribute("aria-expanded", String(open));
+    menuButton?.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+    drawer?.setAttribute("aria-hidden", String(!open));
+    if (open) { lastFocus = document.activeElement; drawer?.querySelector("a,button")?.focus(); }
+    else if (lastFocus) { lastFocus.focus(); }
+  };
+  menuButton?.addEventListener("click", () => setMenu(!body.classList.contains("menu-open")));
+  document.querySelectorAll("[data-drawer-close]").forEach((el) => el.addEventListener("click", () => setMenu(false)));
+  document.addEventListener("keydown", (event) => { if (event.key === "Escape" && body.classList.contains("menu-open")) setMenu(false); });
+
+  const cardMarkup = (property) => `
+    <article class="property-card" data-neighborhood="${property.neighborhood}" data-status="${property.status}">
+      <a href="${asset(`imoveis/${property.slug}.html`)}" aria-label="Conhecer ${property.name}">
+        <div class="property-card-media">
+          <img src="${property.image}" alt="Perspectiva artística de ${property.name}" width="900" height="675" loading="lazy" referrerpolicy="no-referrer">
+          <span class="status-chip">${property.status}</span>
+        </div>
+        <div class="property-card-body">
+          <small>${property.neighborhood} · ${property.type}</small>
+          <h3>${property.shortName}</h3>
+          <p>${property.specs}</p>
+          <div class="property-card-footer"><span>Ver detalhes</span><span aria-hidden="true">↗</span></div>
+        </div>
+      </a>
+    </article>`;
+
+  document.querySelectorAll("[data-property-grid]").forEach((grid) => {
+    const limit = Number(grid.dataset.limit || data.properties.length);
+    grid.innerHTML = data.properties.slice(0, limit).map(cardMarkup).join("");
+  });
+
+  const filters = document.querySelector("[data-property-filters]");
+  if (filters) {
+    const values = ["Todos", ...new Set(data.properties.map((item) => item.neighborhood))];
+    filters.innerHTML = values.map((label, index) => `<button class="filter-button" type="button" aria-pressed="${index === 0}" data-filter="${label}">${label}</button>`).join("");
+    filters.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-filter]");
+      if (!button) return;
+      filters.querySelectorAll("button").forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+      const selected = button.dataset.filter;
+      document.querySelectorAll("[data-property-grid] .property-card").forEach((card) => card.classList.toggle("hidden", selected !== "Todos" && card.dataset.neighborhood !== selected));
+    });
+  }
+
+  const awardsGrid = document.querySelector("[data-awards-grid]");
+  if (awardsGrid) {
+    awardsGrid.innerHTML = data.awards.map((award) => `<article class="proof-card"><span class="year">${award.year}</span><h3>${award.title}</h3><p>${award.detail}</p></article>`).join("");
+  }
+
+  if (page === "property") {
+    const slug = body.dataset.slug;
+    const property = data.properties.find((item) => item.slug === slug);
+    if (!property) {
+      window.location.replace(asset("404.html"));
+    } else {
+      const target = document.querySelector("[data-property-page]");
+      const interestMessage = `Olá, Luana JD! Vim pelo seu site e gostaria de mais informações sobre ${property.name}.`;
+      const related = data.properties.filter((item) => item.slug !== property.slug).slice(0, 6);
+      target.innerHTML = `
+        <section class="property-hero">
+          <div class="property-hero-media"><img src="${property.image}" alt="Perspectiva artística de ${property.name}" width="1600" height="1000" referrerpolicy="no-referrer"></div>
+          <div class="container property-hero-copy">
+            <nav class="breadcrumbs" aria-label="Navegação estrutural"><a href="${asset("index.html")}">Início</a><span>/</span><a href="${asset("imoveis.html")}">Imóveis</a><span>/</span><span>${property.shortName}</span></nav>
+            <span class="eyebrow">${property.status} · ${property.neighborhood}</span>
+            <h1>${property.name}</h1>
+            <p>${property.specs}</p>
+            <div class="property-meta">
+              <div class="meta-item"><small>Tipo</small><strong>${property.type}</strong></div>
+              <div class="meta-item"><small>Bairro</small><strong>${property.neighborhood}</strong></div>
+              <div class="meta-item"><small>Status</small><strong>${property.status}</strong></div>
+              <div class="meta-item"><small>Mobilidade</small><strong>${property.mobility}</strong></div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container detail-grid">
+            <div data-reveal>
+              <p class="eyebrow">Leitura consultiva</p>
+              <h2 class="section-title">Um endereço para avaliar com contexto.</h2>
+              <p class="section-copy">${property.description}</p>
+              <ul class="highlight-list">${property.highlights.map((item) => `<li>${item}</li>`).join("")}</ul>
+              <div class="button-row"><a class="button button-whatsapp" href="${waLink(interestMessage)}" target="_blank" rel="noopener noreferrer"><img src="${asset("assets/icons/whatsapp.svg")}" alt="">Falar com Luana JD</a></div>
+            </div>
+            <div data-reveal>
+              <p class="eyebrow">Localização</p>
+              <h2 class="section-title">${property.neighborhood}</h2>
+              <p class="section-copy">${property.address}</p>
+              <iframe class="map-frame" title="Mapa de ${property.name}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=${encodeURIComponent(property.address)}&output=embed"></iframe>
+            </div>
+          </div>
+        </section>
+        <section class="section dark-section">
+          <div class="container">
+            <p class="eyebrow">Seleção Luana Donatti</p><h2 class="section-title">Continue comparando.</h2>
+            <div class="property-grid" style="margin-top:2rem">${related.map(cardMarkup).join("")}</div>
+            <p class="disclaimer">${data.sourceNote}</p>
+          </div>
+        </section>`;
+      document.title = `${property.shortName} | Luana Donatti`;
+    }
+  }
+
+  const applicationForm = document.querySelector("[data-application-form]");
+  if (applicationForm) {
+    const status = applicationForm.querySelector("[data-form-status]");
+    const submit = applicationForm.querySelector("button[type='submit']");
+    applicationForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      status.className = "form-status";
+      if (applicationForm.website.value) return;
+      submit.disabled = true;
+      submit.textContent = "Enviando...";
+      const payload = Object.fromEntries(new FormData(applicationForm).entries());
+      try {
+        const response = await fetch("/api/candidatura", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok || !result.ok) throw new Error(result.error || "Não foi possível enviar agora.");
+        applicationForm.reset();
+        status.textContent = "Recebemos seus dados. A equipe da Luana JD fará o contato pelo canal informado.";
+        status.className = "form-status success is-visible";
+      } catch (error) {
+        status.textContent = "Não foi possível concluir o envio agora. Tente novamente ou fale com a Luana JD pelo WhatsApp.";
+        status.className = "form-status error is-visible";
+      } finally {
+        submit.disabled = false;
+        submit.textContent = "Enviar meu perfil";
+        status.focus?.();
+      }
+    });
+  }
+
+  const revealItems = document.querySelectorAll("[data-reveal]");
+  if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add("is-visible"); observer.unobserve(entry.target); } }), { threshold: .08 });
+    revealItems.forEach((item) => observer.observe(item));
+  } else revealItems.forEach((item) => item.classList.add("is-visible"));
+})();

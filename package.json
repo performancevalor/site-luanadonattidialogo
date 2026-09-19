@@ -1,0 +1,7 @@
+{
+  "name": "site-luana-donatti-dialogo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "validate": "node scripts/validate.mjs", "dev": "node scripts/serve.mjs" },
+  "engines": { "node": ">=20" }
+}
