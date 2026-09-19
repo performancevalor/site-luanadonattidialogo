@@ -22,6 +22,21 @@ window.SITE_DATA = {
     { year: "2023", title: "4º lugar em gerência", detail: "Reconhecimento no ciclo do marco de VGV de 1 bi da Diálogo." },
     { year: "2022", title: "3º lugar em gerência", detail: "Consolidação entre as equipes de maior performance." },
   ],
+  photoBook: [
+    { src: "assets/images/luana/luana-dialogo.jpg", alt: "Luana Donatti em um momento profissional na Diálogo", caption: "Presença no mercado" },
+    { src: "assets/images/luana/luana-premiacao.jpg", alt: "Luana Donatti segurando um troféu de reconhecimento", caption: "Reconhecimento em vendas" },
+    { src: "assets/images/luana/premiacao-palco.jpg", alt: "Luana Donatti recebendo uma premiação no palco", caption: "Conquista compartilhada" },
+    { src: "assets/images/luana/luana-com-trofeu.jpg", alt: "Luana Donatti com um troféu de desempenho", caption: "Performance consistente" },
+    { src: "assets/images/luana/melhor-tecnica-vendas.jpg", alt: "Reconhecimento de Luana Donatti como melhor técnica de vendas", caption: "Excelência comercial" },
+    { src: "assets/images/luana/premio-trofeu-gestao.jpg", alt: "Luana Donatti com premiação de gestão", caption: "Liderança reconhecida" },
+    { src: "assets/images/luana/reconhecimento-equipe.jpg", alt: "Luana Donatti em cerimônia de reconhecimento da equipe", caption: "Resultado em equipe" },
+    { src: "assets/images/luana/gerencia-campea-2025.jpg", alt: "Luana Donatti com o prêmio de gerência campeã", caption: "Gerência campeã" },
+    { src: "assets/images/luana/luana-perfil.jpg", alt: "Retrato profissional de Luana Donatti", caption: "Proximidade e confiança" },
+    { src: "assets/images/luana/equipe-luana-jd-red-shark.jpg", alt: "Identidade visual da Equipe Luana JD Red Shark", caption: "Equipe Luana JD" },
+    { src: "assets/images/luana/equipe-luana-mascote.jpg", alt: "Mascote Red Shark da Equipe Luana", caption: "Espírito Red Shark" },
+    { src: "assets/images/luana/luana-trofeu-jd-racing.jpg", alt: "Luana Donatti com troféu em evento da JD Racing", caption: "Reconhecimento JD" },
+    { src: "assets/images/luana/luana-jd-racing.jpg", alt: "Luana Donatti premiada em evento da JD Racing", caption: "Trajetória em movimento" },
+  ],
   properties: [
     {
       slug: "orbya-vila-carrao-residences",

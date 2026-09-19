@@ -5,6 +5,9 @@
   const asset = (path) => `${root}/${path}`;
   const page = body.dataset.page || "home";
   const currentYear = new Date().getFullYear();
+  const escapeHtml = (value = "") => String(value).replace(/[&<>"']/g, (character) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;",
+  })[character]);
 
   const waLink = (message) => `https://wa.me/${data.professional.whatsapp}?text=${encodeURIComponent(message)}`;
   const generalMessage = `Olá, Luana JD! Vim pelo seu site e gostaria de conversar sobre imóveis em São Paulo.`;
@@ -24,11 +27,13 @@
     header.innerHTML = `
       <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
       <header class="site-header">
-        <a class="brand" href="${asset("index.html")}" aria-label="Luana Donatti — página inicial">
-          <span class="brand-mark" aria-hidden="true">LJD</span>
-          <span class="brand-copy"><strong>Luana Donatti</strong><span>Gerente de Vendas · Diálogo</span></span>
-        </a>
         <button class="menu-button" type="button" aria-label="Abrir menu" aria-controls="drawer" aria-expanded="false"><i></i><i></i><i></i></button>
+        <a class="header-wordmark" href="${asset("index.html")}" aria-label="Luana Donatti — página inicial">
+          <strong>Luana Donatti</strong><span>Gerente de Vendas · Diálogo</span>
+        </a>
+        <a class="header-contact" href="${waLink(generalMessage)}" target="_blank" rel="noopener noreferrer" aria-label="Falar com Luana JD pelo WhatsApp">
+          <img src="${asset("assets/icons/whatsapp.svg")}" alt="" aria-hidden="true"><span>Luana JD</span>
+        </a>
       </header>
       <div class="drawer-backdrop" data-drawer-close></div>
       <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Menu principal">
@@ -57,7 +62,7 @@
               <a class="brand" href="${asset("index.html")}"><span class="brand-mark">LJD</span><span class="brand-copy"><strong>Luana Donatti</strong><span>Gerente de Vendas · Diálogo</span></span></a>
               <p>14 anos no mercado imobiliário, liderança comercial e atendimento humanizado para compradores, corretores e parceiros.</p>
               <div class="dialogo-lockup" aria-label="Luana é gerente da Diálogo Engenharia">
-                <img src="https://www.dialogo.com.br/assets/7f5695b2/images/logo-dialogo-2025.svg" alt="Diálogo Engenharia" width="205" height="76">
+                <img src="${asset("assets/images/logo-dialogo.svg")}" alt="Diálogo Engenharia" width="205" height="76">
               </div>
             </div>
             <nav class="footer-links" aria-label="Navegação no rodapé">
@@ -132,6 +137,27 @@
     awardsGrid.innerHTML = data.awards.map((award) => `<article class="proof-card"><span class="year">${award.year}</span><h3>${award.title}</h3><p>${award.detail}</p></article>`).join("");
   }
 
+  const photoBook = document.querySelector("[data-photo-book]");
+  if (photoBook && data.photoBook?.length) {
+    const photoMarkup = (photo, duplicate = false) => `
+      <figure class="photo-book-card"${duplicate ? ' aria-hidden="true"' : ""}>
+        <img src="${asset(photo.src)}" alt="${duplicate ? "" : photo.alt}" width="900" height="1200" loading="lazy" decoding="async">
+        <figcaption><span>${photo.caption}</span><small>Luana Donatti</small></figcaption>
+      </figure>`;
+    photoBook.innerHTML = `
+      <div class="photo-book-track">
+        ${data.photoBook.map((photo) => photoMarkup(photo)).join("")}
+        ${data.photoBook.map((photo) => photoMarkup(photo, true)).join("")}
+      </div>`;
+
+    const toggle = document.querySelector("[data-photo-book-toggle]");
+    toggle?.addEventListener("click", () => {
+      const paused = photoBook.classList.toggle("is-paused");
+      toggle.setAttribute("aria-pressed", String(paused));
+      toggle.innerHTML = paused ? '<span aria-hidden="true">▶</span> Continuar' : '<span aria-hidden="true">‖</span> Pausar';
+    });
+  }
+
   if (page === "property") {
     const slug = body.dataset.slug;
     const property = data.properties.find((item) => item.slug === slug);
@@ -141,9 +167,21 @@
       const target = document.querySelector("[data-property-page]");
       const interestMessage = `Olá, Luana JD! Vim pelo seu site e gostaria de mais informações sobre ${property.name}.`;
       const related = data.properties.filter((item) => item.slug !== property.slug).slice(0, 6);
+      const gallery = window.PROPERTY_GALLERIES?.[property.slug] || [{ url: property.image, category: "empreendimento", caption: property.shortName }];
+      const preferredGallery = gallery.filter((item) => !["plantas", "implantacao"].includes(item.category));
+      const previewGallery = (preferredGallery.length ? preferredGallery : gallery).slice(0, 6);
+      const galleryCategories = [...new Set(gallery.map((item) => item.category))];
+      const galleryItem = (item) => `
+        <figure class="property-gallery-item" data-gallery-category="${escapeHtml(item.category)}">
+          <div class="property-gallery-media">
+            <img data-gallery-src="${item.url}" alt="${escapeHtml(item.caption)}" width="1200" height="800" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+          </div>
+          <figcaption><small>${escapeHtml(item.category)}</small>${escapeHtml(item.caption)}</figcaption>
+        </figure>`;
+      const heroImage = previewGallery[0]?.url || property.image;
       target.innerHTML = `
         <section class="property-hero">
-          <div class="property-hero-media"><img src="${property.image}" alt="Perspectiva artística de ${property.name}" width="1600" height="1000" referrerpolicy="no-referrer"></div>
+          <div class="property-hero-media"><img src="${heroImage}" alt="Perspectiva artística de ${property.name}" width="1600" height="1000" fetchpriority="high" decoding="async" referrerpolicy="no-referrer"></div>
           <div class="container property-hero-copy">
             <nav class="breadcrumbs" aria-label="Navegação estrutural"><a href="${asset("index.html")}">Início</a><span>/</span><a href="${asset("imoveis.html")}">Imóveis</a><span>/</span><span>${property.shortName}</span></nav>
             <span class="eyebrow">${property.status} · ${property.neighborhood}</span>
@@ -155,6 +193,18 @@
               <div class="meta-item"><small>Status</small><strong>${property.status}</strong></div>
               <div class="meta-item"><small>Mobilidade</small><strong>${property.mobility}</strong></div>
             </div>
+          </div>
+        </section>
+        <section class="section property-gallery-section" id="galeria">
+          <div class="container">
+            <div class="property-gallery-heading">
+              <div><p class="eyebrow">Galeria oficial Diálogo</p><h2 class="section-title">Conheça cada detalhe.</h2></div>
+              <div><p class="section-copy">${gallery.length} imagens oficiais entre perspectivas, decorados, plantas e ambientes do empreendimento.</p><button class="button button-primary" type="button" data-open-gallery>Ver galeria completa</button></div>
+            </div>
+            <div class="property-gallery-preview">
+              ${previewGallery.map(galleryItem).join("")}
+            </div>
+            <p class="disclaimer">Imagens e perspectivas artísticas disponibilizadas no site oficial da Diálogo. Consulte o material e o memorial descritivo vigente.</p>
           </div>
         </section>
         <section class="section">
@@ -180,7 +230,42 @@
             <div class="property-grid" style="margin-top:2rem">${related.map(cardMarkup).join("")}</div>
             <p class="disclaimer">${data.sourceNote}</p>
           </div>
-        </section>`;
+        </section>
+        <dialog class="gallery-dialog" data-property-gallery aria-labelledby="gallery-dialog-title">
+          <div class="gallery-dialog-shell">
+            <header class="gallery-dialog-header">
+              <div><small>Galeria oficial Diálogo</small><h2 id="gallery-dialog-title">${property.shortName}</h2></div>
+              <button type="button" class="gallery-dialog-close" data-close-gallery aria-label="Fechar galeria">×</button>
+            </header>
+            <nav class="gallery-dialog-filters" aria-label="Filtrar imagens">
+              <button type="button" aria-pressed="true" data-gallery-filter="todos">Todas <span>${gallery.length}</span></button>
+              ${galleryCategories.map((category) => `<button type="button" aria-pressed="false" data-gallery-filter="${escapeHtml(category)}">${escapeHtml(category)} <span>${gallery.filter((item) => item.category === category).length}</span></button>`).join("")}
+            </nav>
+            <div class="gallery-dialog-grid">${gallery.map(galleryItem).join("")}</div>
+            <footer class="gallery-dialog-footer">Gostou deste empreendimento? <a href="${waLink(interestMessage)}" target="_blank" rel="noopener noreferrer">Fale com a Luana JD pelo WhatsApp →</a></footer>
+          </div>
+        </dialog>`;
+
+      const galleryDialog = target.querySelector("[data-property-gallery]");
+      const loadGalleryImages = () => galleryDialog?.querySelectorAll("img[data-gallery-src]").forEach((image) => {
+        if (!image.src) image.src = image.dataset.gallerySrc;
+      });
+      target.querySelectorAll(".property-gallery-preview img[data-gallery-src]").forEach((image) => { image.src = image.dataset.gallerySrc; });
+      target.querySelector("[data-open-gallery]")?.addEventListener("click", () => {
+        loadGalleryImages();
+        galleryDialog?.showModal();
+        body.classList.add("dialog-open");
+      });
+      target.querySelector("[data-close-gallery]")?.addEventListener("click", () => galleryDialog?.close());
+      galleryDialog?.addEventListener("close", () => body.classList.remove("dialog-open"));
+      galleryDialog?.addEventListener("click", (event) => { if (event.target === galleryDialog) galleryDialog.close(); });
+      galleryDialog?.querySelector(".gallery-dialog-filters")?.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-gallery-filter]");
+        if (!button) return;
+        const selected = button.dataset.galleryFilter;
+        galleryDialog.querySelectorAll("[data-gallery-filter]").forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+        galleryDialog.querySelectorAll("[data-gallery-category]").forEach((item) => item.classList.toggle("hidden", selected !== "todos" && item.dataset.galleryCategory !== selected));
+      });
       document.title = `${property.shortName} | Luana Donatti`;
     }
   }
