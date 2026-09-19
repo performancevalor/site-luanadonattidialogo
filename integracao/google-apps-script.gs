@@ -1,4 +1,4 @@
-const SPREADSHEET_ID = "1ZggxeLi1Qj0ab2PypiZw1kDKFEcmrZJHrvvb2BbQBCA";
+/** @OnlyCurrentDoc */
 const SHEET_NAME = "CANDIDATOS E PARCERIAS";
 const HEADERS = ["Recebido em", "Nome completo", "WhatsApp", "E-mail", "CRECI", "Cidade / região", "Interesse", "Tempo de atuação", "Disponibilidade", "Mensagem", "Aceite LGPD", "Origem", "Status"];
 
@@ -15,7 +15,7 @@ function doPost(event) {
       return jsonOutput({ ok: false, error: "Campos obrigatórios ausentes." });
     }
 
-    const spreadsheet = SpreadsheetApp.openById(SPREADSHEET_ID);
+    const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
     const sheet = spreadsheet.getSheetByName(SHEET_NAME) || spreadsheet.insertSheet(SHEET_NAME);
     if (sheet.getLastRow() === 0) sheet.appendRow(HEADERS);
     sheet.appendRow([
