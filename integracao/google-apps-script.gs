@@ -33,7 +33,8 @@ function doPost(event) {
 }
 
 function safe(value, limit) {
-  return String(value || "").trim().replace(/[<>]/g, "").slice(0, limit || 250);
+  const normalized = String(value || "").trim().replace(/[<>]/g, "").slice(0, limit || 250);
+  return /^[=+\-@]/.test(normalized) ? "'" + normalized : normalized;
 }
 
 function jsonOutput(payload) {

@@ -3,7 +3,8 @@ const SCRIPT_URL = process.env.APPS_SCRIPT_URL;
 const fields = ["nome", "whatsapp", "email", "creci", "regiao", "interesse", "experiencia", "disponibilidade", "mensagem", "consentimento"];
 
 function clean(value, max = 500) {
-  return String(value ?? "").trim().replace(/[<>]/g, "").slice(0, max);
+  const normalized = String(value ?? "").trim().replace(/[<>]/g, "").slice(0, max);
+  return /^[=+\-@]/.test(normalized) ? `'${normalized}` : normalized;
 }
 
 module.exports = async function handler(request, response) {
