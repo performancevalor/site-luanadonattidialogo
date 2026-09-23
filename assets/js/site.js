@@ -3,6 +3,7 @@
   const body = document.body;
   const root = body.dataset.root || ".";
   const asset = (path) => `${root}/${path}`;
+  const imageUrl = (path) => /^https?:\/\//i.test(path) ? path : asset(path);
   const page = body.dataset.page || "home";
   const currentYear = new Date().getFullYear();
   const escapeHtml = (value = "") => String(value).replace(/[&<>"']/g, (character) => ({
@@ -28,12 +29,10 @@
       <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
       <header class="site-header">
         <button class="menu-button" type="button" aria-label="Abrir menu" aria-controls="drawer" aria-expanded="false"><i></i><i></i><i></i></button>
-        <a class="header-wordmark" href="${asset("index.html")}" aria-label="Luana Donatti — página inicial">
-          <strong>Luana Donatti</strong><span>Gerente de Vendas · Diálogo</span>
+        <a class="header-logo" href="${asset("index.html")}" aria-label="Luana Donatti — página inicial">
+          <img src="${asset("assets/images/logo-luana-donatti.svg")}" alt="Luana Donatti" width="360" height="92">
         </a>
-        <a class="header-contact" href="${waLink(generalMessage)}" target="_blank" rel="noopener noreferrer" aria-label="Falar com Luana JD pelo WhatsApp">
-          <img src="${asset("assets/icons/whatsapp.svg")}" alt="" aria-hidden="true"><span>Luana JD</span>
-        </a>
+        <span class="header-balance" aria-hidden="true"></span>
       </header>
       <div class="drawer-backdrop" data-drawer-close></div>
       <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Menu principal">
@@ -102,7 +101,7 @@
     <article class="property-card" data-neighborhood="${property.neighborhood}" data-status="${property.status}">
       <a href="${asset(`imoveis/${property.slug}.html`)}" aria-label="Conhecer ${property.name}">
         <div class="property-card-media">
-          <img src="${property.image}" alt="Perspectiva artística de ${property.name}" width="900" height="675" loading="lazy" referrerpolicy="no-referrer">
+          <img src="${asset(`assets/images/properties/covers/${property.slug}-card.webp`)}" alt="Imagem em alta definição de ${property.name}" width="1600" height="1000" loading="lazy" decoding="async">
           <span class="status-chip">${property.status}</span>
         </div>
         <div class="property-card-body">
@@ -171,14 +170,15 @@
       const preferredGallery = gallery.filter((item) => !["plantas", "implantacao"].includes(item.category));
       const previewGallery = (preferredGallery.length ? preferredGallery : gallery).slice(0, 6);
       const galleryCategories = [...new Set(gallery.map((item) => item.category))];
-      const galleryItem = (item) => `
-        <figure class="property-gallery-item" data-gallery-category="${escapeHtml(item.category)}">
-          <div class="property-gallery-media">
+      const galleryItem = (item, index) => `
+        <figure class="property-gallery-item" data-gallery-category="${escapeHtml(item.category)}" data-gallery-index="${index}">
+          <button class="property-gallery-media" type="button" data-lightbox-open="${index}" aria-label="Ampliar: ${escapeHtml(item.caption)}">
             <img data-gallery-src="${item.url}" alt="${escapeHtml(item.caption)}" width="1200" height="800" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-          </div>
+            <span class="gallery-zoom" aria-hidden="true">Ampliar</span>
+          </button>
           <figcaption><small>${escapeHtml(item.category)}</small>${escapeHtml(item.caption)}</figcaption>
         </figure>`;
-      const heroImage = previewGallery[0]?.url || property.image;
+      const heroImage = imageUrl(property.image);
       target.innerHTML = `
         <section class="property-hero">
           <div class="property-hero-media"><img src="${heroImage}" alt="Perspectiva artística de ${property.name}" width="1600" height="1000" fetchpriority="high" decoding="async" referrerpolicy="no-referrer"></div>
@@ -202,7 +202,7 @@
               <div><p class="section-copy">${gallery.length} imagens oficiais entre perspectivas, decorados, plantas e ambientes do empreendimento.</p><button class="button button-primary" type="button" data-open-gallery>Ver galeria completa</button></div>
             </div>
             <div class="property-gallery-preview">
-              ${previewGallery.map(galleryItem).join("")}
+               ${previewGallery.map((item) => galleryItem(item, gallery.indexOf(item))).join("")}
             </div>
             <p class="disclaimer">Imagens e perspectivas artísticas disponibilizadas no site oficial da Diálogo. Consulte o material e o memorial descritivo vigente.</p>
           </div>
@@ -241,30 +241,85 @@
               <button type="button" aria-pressed="true" data-gallery-filter="todos">Todas <span>${gallery.length}</span></button>
               ${galleryCategories.map((category) => `<button type="button" aria-pressed="false" data-gallery-filter="${escapeHtml(category)}">${escapeHtml(category)} <span>${gallery.filter((item) => item.category === category).length}</span></button>`).join("")}
             </nav>
-            <div class="gallery-dialog-grid">${gallery.map(galleryItem).join("")}</div>
-            <footer class="gallery-dialog-footer">Gostou deste empreendimento? <a href="${waLink(interestMessage)}" target="_blank" rel="noopener noreferrer">Fale com a Luana JD pelo WhatsApp →</a></footer>
-          </div>
-        </dialog>`;
+             <div class="gallery-dialog-grid">${gallery.map((item, index) => galleryItem(item, index)).join("")}</div>
+             <footer class="gallery-dialog-footer">Gostou deste empreendimento? <a href="${waLink(interestMessage)}" target="_blank" rel="noopener noreferrer">Fale com a Luana JD pelo WhatsApp →</a></footer>
+           </div>
+         </dialog>
+         <dialog class="image-lightbox" data-image-lightbox aria-label="Visualizador de imagens de ${property.shortName}">
+           <div class="image-lightbox-shell">
+             <button type="button" class="image-lightbox-close" data-lightbox-close aria-label="Fechar imagem">×</button>
+             <button type="button" class="image-lightbox-nav image-lightbox-prev" data-lightbox-prev aria-label="Imagem anterior">←</button>
+             <figure class="image-lightbox-figure">
+               <img src="" alt="" width="2000" height="1333" data-lightbox-image>
+               <figcaption><span data-lightbox-category></span><strong data-lightbox-caption></strong><small data-lightbox-counter></small></figcaption>
+             </figure>
+             <button type="button" class="image-lightbox-nav image-lightbox-next" data-lightbox-next aria-label="Próxima imagem">→</button>
+           </div>
+         </dialog>`;
 
       const galleryDialog = target.querySelector("[data-property-gallery]");
+      const lightbox = target.querySelector("[data-image-lightbox]");
+      const lightboxImage = lightbox?.querySelector("[data-lightbox-image]");
+      const lightboxCaption = lightbox?.querySelector("[data-lightbox-caption]");
+      const lightboxCategory = lightbox?.querySelector("[data-lightbox-category]");
+      const lightboxCounter = lightbox?.querySelector("[data-lightbox-counter]");
+      let visibleGalleryIndices = gallery.map((_, index) => index);
+      let activeLightboxIndices = visibleGalleryIndices;
+      let lightboxPosition = 0;
+      const syncDialogState = () => body.classList.toggle("dialog-open", Boolean(galleryDialog?.open || lightbox?.open));
       const loadGalleryImages = () => galleryDialog?.querySelectorAll("img[data-gallery-src]").forEach((image) => {
         if (!image.src) image.src = image.dataset.gallerySrc;
       });
+      const renderLightbox = () => {
+        const itemIndex = activeLightboxIndices[lightboxPosition];
+        const item = gallery[itemIndex];
+        if (!item || !lightboxImage) return;
+        lightboxImage.src = item.url;
+        lightboxImage.alt = item.caption;
+        lightboxCaption.textContent = item.caption;
+        lightboxCategory.textContent = item.category;
+        lightboxCounter.textContent = `${lightboxPosition + 1} / ${activeLightboxIndices.length}`;
+      };
+      const openLightbox = (index) => {
+        activeLightboxIndices = galleryDialog?.open ? visibleGalleryIndices : gallery.map((_, itemIndex) => itemIndex);
+        lightboxPosition = Math.max(0, activeLightboxIndices.indexOf(index));
+        renderLightbox();
+        lightbox?.showModal();
+        syncDialogState();
+      };
+      const moveLightbox = (direction) => {
+        lightboxPosition = (lightboxPosition + direction + activeLightboxIndices.length) % activeLightboxIndices.length;
+        renderLightbox();
+      };
       target.querySelectorAll(".property-gallery-preview img[data-gallery-src]").forEach((image) => { image.src = image.dataset.gallerySrc; });
+      target.addEventListener("click", (event) => {
+        const trigger = event.target.closest("[data-lightbox-open]");
+        if (trigger) openLightbox(Number(trigger.dataset.lightboxOpen));
+      });
       target.querySelector("[data-open-gallery]")?.addEventListener("click", () => {
         loadGalleryImages();
         galleryDialog?.showModal();
-        body.classList.add("dialog-open");
+        syncDialogState();
       });
       target.querySelector("[data-close-gallery]")?.addEventListener("click", () => galleryDialog?.close());
-      galleryDialog?.addEventListener("close", () => body.classList.remove("dialog-open"));
+      galleryDialog?.addEventListener("close", syncDialogState);
       galleryDialog?.addEventListener("click", (event) => { if (event.target === galleryDialog) galleryDialog.close(); });
+      lightbox?.querySelector("[data-lightbox-close]")?.addEventListener("click", () => lightbox.close());
+      lightbox?.querySelector("[data-lightbox-prev]")?.addEventListener("click", () => moveLightbox(-1));
+      lightbox?.querySelector("[data-lightbox-next]")?.addEventListener("click", () => moveLightbox(1));
+      lightbox?.addEventListener("close", syncDialogState);
+      lightbox?.addEventListener("click", (event) => { if (event.target === lightbox) lightbox.close(); });
+      lightbox?.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") { event.preventDefault(); moveLightbox(-1); }
+        if (event.key === "ArrowRight") { event.preventDefault(); moveLightbox(1); }
+      });
       galleryDialog?.querySelector(".gallery-dialog-filters")?.addEventListener("click", (event) => {
         const button = event.target.closest("[data-gallery-filter]");
         if (!button) return;
         const selected = button.dataset.galleryFilter;
         galleryDialog.querySelectorAll("[data-gallery-filter]").forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
         galleryDialog.querySelectorAll("[data-gallery-category]").forEach((item) => item.classList.toggle("hidden", selected !== "todos" && item.dataset.galleryCategory !== selected));
+        visibleGalleryIndices = gallery.map((item, index) => ({ item, index })).filter(({ item }) => selected === "todos" || item.category === selected).map(({ index }) => index);
       });
       document.title = `${property.shortName} | Luana Donatti`;
     }

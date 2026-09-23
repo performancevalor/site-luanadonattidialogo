@@ -25,7 +25,7 @@ window.SITE_DATA = {
   photoBook: [
     { src: "assets/images/luana/luana-dialogo.jpg", alt: "Luana Donatti em um momento profissional na Diálogo", caption: "Presença no mercado" },
     { src: "assets/images/luana/luana-premiacao.jpg", alt: "Luana Donatti segurando um troféu de reconhecimento", caption: "Reconhecimento em vendas" },
-    { src: "assets/images/luana/premiacao-palco.jpg", alt: "Luana Donatti recebendo uma premiação no palco", caption: "Conquista compartilhada" },
+    { src: "assets/images/luana/premiacao-palco-sem-marcacao.png", alt: "Luana Donatti recebendo uma premiação no palco", caption: "Conquista compartilhada" },
     { src: "assets/images/luana/luana-com-trofeu.jpg", alt: "Luana Donatti com um troféu de desempenho", caption: "Performance consistente" },
     { src: "assets/images/luana/melhor-tecnica-vendas.jpg", alt: "Reconhecimento de Luana Donatti como melhor técnica de vendas", caption: "Excelência comercial" },
     { src: "assets/images/luana/premio-trofeu-gestao.jpg", alt: "Luana Donatti com premiação de gestão", caption: "Liderança reconhecida" },
@@ -50,7 +50,7 @@ window.SITE_DATA = {
       address: "Av. Conselheiro Carrão, 2111 - Vila Carrão, São Paulo - SP",
       description: "Duas torres independentes em um terreno de 6.100 m², com plantas amplas e conexão direta com a transformação urbana da Vila Carrão.",
       highlights: ["Piscina com raia de 25 m", "Plantas de 79 a 137 m²", "Penthouse de até 212 m²", "Mobilidade na porta"],
-      image: "https://www.dialogo.com.br/estatico/2026/06/02/15/48/0aba185c829c7a62a41158c642b39dd1392a4fa2.jpg",
+      image: "assets/images/properties/covers/orbya-vila-carrao-residences.jpg",
       source: "https://www.dialogo.com.br/imoveis/vila-carrao/apartamentos/orbya-vila-carrao-by-dialogo-residences",
     },
     {
@@ -65,7 +65,7 @@ window.SITE_DATA = {
       address: "Rua Delmira Ferreira, 152 - Cursino, São Paulo - SP",
       description: "Um projeto voltado ao bem-estar, com áreas verdes, vista do bairro e espaços de relaxamento, em um eixo importante de mobilidade da cidade.",
       highlights: ["Casa de campo com SPA", "Studios a 3 dormitórios", "Áreas verdes", "Unidades HIS-2 e HMP"],
-      image: "https://www.dialogo.com.br/estatico/2026/06/10/10/46/e9bae23d2fc7ec6a2c2af04b9d1e6f82b1874f3b.jpg",
+      image: "assets/images/properties/covers/oasis-santa-cruz.jpg",
       source: "https://www.dialogo.com.br/imoveis/alto-do-ipiranga/apartamentos/oasis-santa-cruz-by-dialogo",
     },
     {
@@ -80,7 +80,7 @@ window.SITE_DATA = {
       address: "Av. Conselheiro Carrão, 1789 - Vila Carrão, São Paulo - SP",
       description: "Torre única com espaços multifuncionais, apartamentos com varanda e plantas pensadas para uma rotina urbana conectada.",
       highlights: ["Piscina com solarium", "Coworking", "Fitness", "Lazer no 9º pavimento"],
-      image: "https://www.dialogo.com.br/estatico/2026/08/10/16/34/89c842327a82358b4a16073f105cc3cd8005d289.jpg",
+      image: "assets/images/properties/covers/way-vila-carrao.jpg",
       source: "https://www.dialogo.com.br/imoveis/vila-carrao/apartamentos/way-vila-carrao",
     },
     {
@@ -95,7 +95,7 @@ window.SITE_DATA = {
       address: "Rua Camberra, 483 - Jardim Anália Franco, São Paulo - SP",
       description: "Um refúgio urbano com paisagismo marcante, plantas generosas e um complexo wellness projetado para bem-estar e convivência.",
       highlights: ["Quadra de tênis oficial", "Piscina coberta e aquecida", "Complexo wellness", "Plantas de até 243 m²"],
-      image: "https://www.dialogo.com.br/estatico/2026/03/18/14/34/fd1d36cc573ae8a8f68e235c688e62b021d62906.jpg",
+      image: "assets/images/properties/covers/mona-analia-franco.jpg",
       source: "https://www.dialogo.com.br/imoveis/analia-franco/apartamentos/mona-analia-franco",
     },
     {
@@ -110,7 +110,7 @@ window.SITE_DATA = {
       address: "Rua Platina, 1440 - Tatuapé, São Paulo - SP",
       description: "Torre única com lazer completo, reunindo mobilidade, conveniência e diferentes tipologias em um endereço central do Tatuapé.",
       highlights: ["Piscina com raia de 25 m", "Sauna e massagem", "Quadra recreativa", "Coworking e pet care"],
-      image: "https://www.dialogo.com.br/estatico/2026/08/31/16/03/b7f0ca500596685121da6fef698c96cb4f473c2c.jpg",
+      image: "assets/images/properties/covers/platinum-tatuape.jpg",
       source: "https://www.dialogo.com.br/imoveis/tatuape/apartamentos/platinum-tatuape-by-dialogo",
     },
     {
@@ -125,7 +125,7 @@ window.SITE_DATA = {
       address: "Rua Chamantá, 696 - Mooca, São Paulo - SP",
       description: "Um conjunto residencial de grande escala, em terreno com mais de 5.500 m², que combina plantas familiares e lazer completo na Mooca.",
       highlights: ["Piscina com raia de 25 m", "Quadra de beach tennis", "Diálogo Club", "Penthouse de até 311 m²"],
-      image: "https://www.dialogo.com.br/estatico/2026/02/20/14/01/5ae0d2de7b53a81f6ba35dbc2febbcef21607111.jpg",
+      image: "assets/images/properties/covers/grandialogo-parque-da-mooca-residences.jpg",
       source: "https://www.dialogo.com.br/imoveis/mooca/apartamentos/grandialogo-parque-da-mooca-residences",
     },
     {
@@ -140,7 +140,7 @@ window.SITE_DATA = {
       address: "Rua Delmira Ferreira, 32 - Alto do Ipiranga, São Paulo - SP",
       description: "Projeto de presença marcante, com diversidade de plantas e ambientes de lazer e convivência para diferentes momentos da vida.",
       highlights: ["Coworking", "Espaço gourmet", "Fitness", "Penthouse de até 264 m²"],
-      image: "https://www.dialogo.com.br/estatico/2025/12/12/09/30/ec0ec3e5d31dccb4af0ba866d512d9360600d280.jpg",
+      image: "assets/images/properties/covers/landmark-santa-cruz-residences.jpg",
       source: "https://www.dialogo.com.br/imoveis/alto-do-ipiranga/apartamentos/landmark-santa-cruz-by-dialogo-residences",
     },
     {
@@ -155,7 +155,7 @@ window.SITE_DATA = {
       address: "Av. Conselheiro Carrão, 2111 - Vila Carrão, São Paulo - SP",
       description: "Uma coleção de plantas compactas e funcionais, com serviços e lazer voltados à vida urbana perto dos principais pontos da Zona Leste.",
       highlights: ["Sky lounge", "Piscina", "Coworking", "Lavanderia compartilhada"],
-      image: "https://www.dialogo.com.br/estatico/2026/06/02/15/57/8c741beb7fac4abfd3dd907c63836e33d31e7670.jpg",
+      image: "assets/images/properties/covers/orbya-vila-carrao-home-spaces.jpg",
       source: "https://www.dialogo.com.br/imoveis/vila-carrao/studios/orbya-vila-carrao-by-dialogo-home-spaces",
     },
     {
@@ -170,7 +170,7 @@ window.SITE_DATA = {
       address: "Rua Potá, 422 - Jardim Anália Franco, São Paulo - SP",
       description: "Arquitetura contemporânea, plantas inteligentes e serviços pensados para quem valoriza mobilidade, funcionalidade e rotina prática.",
       highlights: ["Coliving", "Piscina com solarium", "Pet care", "Lavanderia compartilhada"],
-      image: "https://www.dialogo.com.br/estatico/2026/04/01/15/33/74d0e7d9fcdf3728d983fd27eb8b3dcf9b8acc6a.jpg",
+      image: "assets/images/properties/covers/analia-franco-station.jpg",
       source: "https://www.dialogo.com.br/imoveis/analia-franco/apartamentos/analia-franco-station",
     },
     {
@@ -185,7 +185,7 @@ window.SITE_DATA = {
       address: "Rua Astorga, 853 - Vila Guilhermina, São Paulo - SP",
       description: "Um projeto conectado ao metrô e à Radial Leste, com estrutura moderna para uma rotina urbana que pede acesso rápido e conforto.",
       highlights: ["Piscinas adulto e infantil", "Coworking", "Fitness", "Pet care e beauty care"],
-      image: "https://www.dialogo.com.br/estatico/2026/02/18/16/53/9b98f64aafa67e80f4a2b609f55fb9cc92d9105f.jpg",
+      image: "assets/images/properties/covers/way-guilhermina.jpg",
       source: "https://www.dialogo.com.br/imoveis/vila-guilhermina/apartamentos/way-guilhermina-by-dialogo",
     },
   ],
