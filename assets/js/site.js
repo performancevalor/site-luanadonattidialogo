@@ -354,8 +354,48 @@
     });
   }
 
+  const counters = document.querySelectorAll("[data-counter]");
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const formatCounter = (counter, value) => {
+    const prefix = counter.dataset.counterPrefix || "";
+    const suffix = counter.dataset.counterSuffix || "";
+    return `${prefix}${new Intl.NumberFormat("pt-BR").format(value)}${suffix}`;
+  };
+  const finishCounter = (counter) => {
+    counter.textContent = formatCounter(counter, Number(counter.dataset.counter));
+    counter.classList.remove("is-counting");
+  };
+  const animateCounter = (counter) => {
+    if (counter.dataset.counterAnimated === "true") return;
+    counter.dataset.counterAnimated = "true";
+    const target = Number(counter.dataset.counter);
+    const duration = Number(counter.dataset.counterDuration || 1800);
+    const startedAt = performance.now();
+    counter.classList.add("is-counting");
+    const tick = (now) => {
+      const progress = Math.min((now - startedAt) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 4);
+      counter.textContent = formatCounter(counter, Math.round(target * eased));
+      if (progress < 1) requestAnimationFrame(tick);
+      else finishCounter(counter);
+    };
+    requestAnimationFrame(tick);
+  };
+  if (counters.length) {
+    if (reducedMotion || !("IntersectionObserver" in window)) counters.forEach(finishCounter);
+    else {
+      counters.forEach((counter) => { counter.textContent = formatCounter(counter, 0); });
+      const counterObserver = new IntersectionObserver((entries) => entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        animateCounter(entry.target);
+        counterObserver.unobserve(entry.target);
+      }), { threshold: .45 });
+      counters.forEach((counter) => counterObserver.observe(counter));
+    }
+  }
+
   const revealItems = document.querySelectorAll("[data-reveal]");
-  if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  if ("IntersectionObserver" in window && !reducedMotion) {
     const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add("is-visible"); observer.unobserve(entry.target); } }), { threshold: .08 });
     revealItems.forEach((item) => observer.observe(item));
   } else revealItems.forEach((item) => item.classList.add("is-visible"));

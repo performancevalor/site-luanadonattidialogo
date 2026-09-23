@@ -164,12 +164,17 @@ main { padding-top: 4.75rem; }
 .hero-photo > img { border-radius: inherit; }
 .red-thread { position: absolute; left: 1rem; top: 0; bottom: 0; width: 1px; background: linear-gradient(var(--red), rgba(201,20,29,0)); opacity: .55; }
 
-.metrics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin-top: -1px; overflow: hidden; border-radius: 0 0 var(--radius) var(--radius); background: rgba(255,255,255,.12); }
-.metric { padding: 1.3rem; border: 0; color: var(--white); background: var(--wine-dark); }
-.metric:first-child { border-radius: 0 0 0 var(--radius); }
+.metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; margin-top: -1px; overflow: hidden; border-radius: 0 0 var(--radius) var(--radius); background: rgba(255,255,255,.16); }
+.metric { min-width: 0; padding: 1rem .55rem; border: 0; color: var(--white); background: var(--wine-dark); }
+.metric-featured { position: relative; grid-column: 1 / -1; padding: clamp(1.4rem, 5vw, 2.3rem) 1rem; overflow: hidden; text-align: center; background: linear-gradient(120deg, #350406, var(--wine-dark) 52%, #701017); }
+.metric-featured::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(circle at 50% 110%, rgba(224,68,59,.34), transparent 52%); }
+.metric:nth-child(2) { border-radius: 0 0 0 var(--radius); }
 .metric:last-child { border-radius: 0 0 var(--radius) 0; }
-.metric strong { display: block; color: var(--white); font-family: var(--font-display); font-weight: 400; font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1; }
-.metric span { display: block; margin-top: .55rem; color: rgba(255,255,255,.62); font-size: .73rem; text-transform: uppercase; letter-spacing: .08em; }
+.metric strong { position: relative; display: block; color: var(--white); font-family: var(--font-display); font-weight: 400; font-size: clamp(1.38rem, 6.2vw, 3rem); font-variant-numeric: tabular-nums; line-height: 1; white-space: nowrap; }
+.metric-featured strong { font-size: clamp(2.35rem, 11.5vw, 5.5rem); letter-spacing: -.035em; }
+.metric span { position: relative; display: block; margin-top: .55rem; color: rgba(255,255,255,.64); font-size: clamp(.43rem, 1.8vw, .7rem); font-weight: 700; line-height: 1; text-transform: uppercase; letter-spacing: .045em; white-space: nowrap; }
+.metric-featured span { color: rgba(255,255,255,.75); font-size: clamp(.62rem, 2.4vw, .82rem); letter-spacing: .16em; }
+.metric-number.is-counting { text-shadow: 0 0 1.5rem rgba(255,255,255,.2); }
 
 .architecture-section { padding-bottom: 0; }
 .architecture-panel { position: relative; min-height: clamp(33rem, 65vw, 49rem); overflow: hidden; border-radius: 1.5rem; color: var(--white); background: var(--wine-dark); box-shadow: var(--shadow); }
@@ -386,9 +391,7 @@ main { padding-top: 4.75rem; }
   .container { width: min(100% - 3rem, 76rem); }
   .hero-grid { align-items: center; }
   .hero-photo { min-height: 0; aspect-ratio: 3 / 2; }
-  .metrics { grid-template-columns: repeat(4,1fr); }
-  .metric:first-child { border-radius: 0 0 0 var(--radius); }
-  .metric:last-child { border-radius: 0 0 var(--radius) 0; }
+  .metric { padding: 1.25rem; }
   .story-grid, .split-grid, .detail-grid { grid-template-columns: repeat(2,minmax(0,1fr)); align-items: center; }
   .proof-grid { grid-template-columns: repeat(2,1fr); }
   .property-grid { grid-template-columns: repeat(2,1fr); }
