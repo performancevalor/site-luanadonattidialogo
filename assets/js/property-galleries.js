@@ -1,4 +1,533 @@
 window.PROPERTY_GALLERIES = {
+  "grand-high-residences-alto-da-boa-vista": [
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/54/94ab3e3b9385d206bd26c3d6ce9a1f4fcc596b94.png",
+      "category": "plantas",
+      "caption": "Planta de 3 dorms. (1 suíte) com lavabo - 97m² - Torre 2 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/54/6fe07604fa2cd1a3a30633a06d7509f494affe2a.png",
+      "category": "plantas",
+      "caption": "Planta de 2 suítes com lavabo - opção ampliado - 97m² - Torre 2 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/54/3d80b0493533918c78a58bf601f18c8e563f849d.png",
+      "category": "plantas",
+      "caption": "Planta de 3 suítes com lavabo - 120m² - Torre 2 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/54/eccc40de5aace452cadd80b0418a114a229158a9.png",
+      "category": "plantas",
+      "caption": "Planta de 2 suítes com lavabo, banheiro Sr. e Sra. - Opção ampliado - 120m² - Torre 2 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/54/a2722215250eb56a01c7974f2745d22c9307cca7.png",
+      "category": "plantas",
+      "caption": "Planta de 4 dorms. (2 suítes) com lavabo - 159m² - Torre 1 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/54/6eb7f7aaa2b3832542274d55c6348c021ca371d8.png",
+      "category": "plantas",
+      "caption": "Planta opção ampliada 3 suítes com lavabo - 159m² - Torre 1 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/54/f74bdbe83ccdbe20ecb063f56c1ad81b87caa9e3.png",
+      "category": "plantas",
+      "caption": "Planta de 4 suítes com lavabo - 184m² - Torre 1 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/54/32d8087d6b889ec2692be81efd3b2c1bfc53894a.png",
+      "category": "plantas",
+      "caption": "Planta opção ampliada 3 suítes com lavabo - 184m² - Torre 1 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/54/1b6e318c506233fd932606b5be6aa30074839791.png",
+      "category": "plantas",
+      "caption": "Planta penthouse 3 suítes - 221m² - Torre 2 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/54/597e65c86d98852ce4e9665e1b2ddccf53955c96.png",
+      "category": "plantas",
+      "caption": "Planta penthouse 4 suítes - 340m² - Torre 1 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/04/14/27/6a954ba72fe2f93e02ac70076d29cae2d2287360.png",
+      "category": "decorado",
+      "caption": "Living do apartamento de 3 suítes de 184m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/04/14/31/49f26fa3643f0c2d29ecf254a625e557ff6d1743.png",
+      "category": "decorado",
+      "caption": "Terraço com churrasqueira a carvão do apartamento de 3 suítes de 184m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/04/14/33/9a477a49653c1d57c2ac6542bba607b448bd0dac.png",
+      "category": "decorado",
+      "caption": "Hall do elevador privativo do apartamento de 3 suítes de 184m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/04/14/34/4fa5fdc2f4ec83e312c72e707a2f2a0f726694ce.png",
+      "category": "decorado",
+      "caption": "Cozinha do apartamento de 3 suítes de 184m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/04/14/36/e3ecdd1d3b65895facd26e42040f26247d3d314e.png",
+      "category": "decorado",
+      "caption": "Lavabo do apartamento de 3 suítes de 184m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/04/14/37/48e334f6aa48477c2a1b97afc0c5aae352ae7ec2.png",
+      "category": "decorado",
+      "caption": "Suíte principal do apartamento de 3 suítes de 184m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/04/14/38/979225bd280c39a7abc797aa856f216cf2599d9d.png",
+      "category": "decorado",
+      "caption": "Closet da suíte principal do apartamento de 3 suítes de 184m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/04/14/41/888ba3e85436e04b93ca6a6b8c03951c396ce1b3.png",
+      "category": "decorado",
+      "caption": "Banheiro 1 da suíte principal do apartamento de 3 suítes de 184m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/04/15/00/c9fe5c2383d61c8131aa5b2a8f8f27082d4a2863.jpg",
+      "category": "decorado",
+      "caption": "Banheiro 2 da suíte principal do apartamento de 3 suítes de 184m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/04/15/02/45e10914636c52a64ae90e8cb778317e9aaba02c.png",
+      "category": "decorado",
+      "caption": "Suíte 02 do apartamento de 3 suítes de 184m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/04/15/04/cb52fb4090cb0635ccba1269d9f55c21030c27d8.png",
+      "category": "decorado",
+      "caption": "Banheiro da suíte 02 do apartamento de 3 suítes de 184m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/04/15/06/89d56ab11640b29b7788c82759af6e9469108fe9.png",
+      "category": "decorado",
+      "caption": "Suíte 03 do apartamento de 3 suítes de 184m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/04/15/07/7ea43051083e3417df9c055aa65dcdb20629c42b.png",
+      "category": "decorado",
+      "caption": "Banheiro da suíte 03 do apartamento de 3 suítes de 184m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/34/b57ab5e92b56bc9d53d37d006f6c4af336f05bad.png",
+      "category": "apartamento",
+      "caption": "Living 3 suítes - Opção ampliada - 184m² - Torre 1 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/35/2dd80892a18c2b32526bdbc41b63191fce797ff2.png",
+      "category": "apartamento",
+      "caption": "Terraço 3 suítes - Opção ampliada - 184m² - Torre 1 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/35/863fe0e7961c03324d0d643e53e74b36c5eb2158.png",
+      "category": "apartamento",
+      "caption": "Living 3 suítes - Opção ampliada - 159m² (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/36/cf02cd81947119ede9063a14be3d67f01936cc02.png",
+      "category": "apartamento",
+      "caption": "Living do apto. de 3 suítes - 120m² - Torre 2 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/36/37a97978461f7ac22b86aca7cef9b9dbb2561569.png",
+      "category": "apartamento",
+      "caption": "Terraço do apto. de 3 suítes - 120m² - Torre 2 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/25/15/16/fcd10454ea5ee814bc87dd8027724897a787fc07.jpg",
+      "category": "apartamento",
+      "caption": "Living do apto. de 2 suítes - Opção ampliada - 97m² - Torre 2 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/36/d172609f0bd3299494dea643391e26e0ef67f68d.png",
+      "category": "apartamento",
+      "caption": "Terraço do apto. de 2 suítes - Opção ampliada - 97m² (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/45/167a9f92f253bbdbfbaff6aba3e42bf26072f797.png",
+      "category": "implantacao",
+      "caption": "Implantação 2º subsolo (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/13/45/17f12f8925e2a66358975f67fd413685bb4625a3.png",
+      "category": "implantacao",
+      "caption": "Implantação térreo (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/38/056e8bda2f925330e61b2fa5625efe270d27ae3c.png",
+      "category": "areas comuns",
+      "caption": "Detalhe fachada (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/11/15/40/541ad49d43be708af5c3da8958b6c0bbc97963d3.png",
+      "category": "areas comuns",
+      "caption": "Porte-Cochère (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/43/d52ba0dbbf20cce92fb8ec9d157ed5b4fa7f53a3.png",
+      "category": "areas comuns",
+      "caption": "Lobby principal - Torre 1 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/43/b19061c18c156fc213fd8071623091bcae85b307.png",
+      "category": "areas comuns",
+      "caption": "Coliving (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/41/f4260c3c75f6c1071527208a9ad4c3d67d295514.png",
+      "category": "areas comuns",
+      "caption": "Piscina recreativa adulto e infantil com deck molhado (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/41/4435b3bed124576ea627bad97b224a7644a73676.png",
+      "category": "areas comuns",
+      "caption": "Piscina coberta com raia de 25m (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/44/86d77b9bc95251696de17906ae132bf71e2cab9d.png",
+      "category": "areas comuns",
+      "caption": "Sauna (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/41/abf36747ef6c46b2f909829e4ad2a1bd3099d36f.png",
+      "category": "areas comuns",
+      "caption": "Quadra de beach tennis (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/52/0c227a2d1391f7d0a4fc987a95066715d3725ef4.png",
+      "category": "areas comuns",
+      "caption": "Churrasqueira - Torre 1 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/42/96dce4ff38a5b08121ee84436bb53b53c4e3f014.png",
+      "category": "areas comuns",
+      "caption": "Churrasqueira - Torre 2 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/43/f6e4e028aa57d198e9bc8f49a9647c3e177d0dfd.png",
+      "category": "areas comuns",
+      "caption": "Espaço gourmet integrado com o salão de festas (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/43/a67c161292d81e3c81b71adeaf6134caf19d1d85.png",
+      "category": "areas comuns",
+      "caption": "Salão de festas integrado com o espaço gourmet - Torre 1 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/12/03/5a53818abbfc6a1dd1ab1fc6b7c21877e645eeac.jpg",
+      "category": "areas comuns",
+      "caption": "Espaço gourmet - Torre 2 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/30/17/57/4a612361291a0528d17df194b9823102c281acde.png",
+      "category": "areas comuns",
+      "caption": "Fitness (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/30/18/00/1558e589a0f5ea7996b6c32f623ec0ed10460adb.png",
+      "category": "areas comuns",
+      "caption": "Fitness (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/43/c12ec9b2829484119cbf8931750f324253afb55b.png",
+      "category": "areas comuns",
+      "caption": "Salão de jogos com bar - Torre 1 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/41/13c1dc4b02955a312477eeb781380729e10a0642.png",
+      "category": "areas comuns",
+      "caption": "Playground (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/51/1cc139f31239c76982d4aeadee1019e0d3ec517e.png",
+      "category": "areas comuns",
+      "caption": "Brinquedoteca (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/12/07/8d225820a64a45bfafa53749f9702a53911c2acd.jpg",
+      "category": "areas comuns",
+      "caption": "Espaço mulher e sala de massagem (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/12/07/d5179b41f9a7e5bde1c3f856a0dc14c0353b0261.jpg",
+      "category": "areas comuns",
+      "caption": "Sala de massagem (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/42/98e3859308db36a8d6ab0cf212824a8c5d15caa7.png",
+      "category": "areas comuns",
+      "caption": "Pet place (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/42/191ae0f83d1a2e80ed39f7df8560a2bd941aaf37.png",
+      "category": "areas comuns",
+      "caption": "Redário (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/41/44506ea95d68176250ee087dbea4e686493dfccd.png",
+      "category": "areas comuns",
+      "caption": "Quadra recreativa (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/06/13/11/43/5c03ffe1c92d203fadda0dcbc7081155942f16bd.png",
+      "category": "areas comuns",
+      "caption": "Delivery (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/09/23/13/59/208505ba501c28c79acc8ae53be0cd58d4f03dcc.png",
+      "category": "areas comuns",
+      "caption": "Garagem - 3º subsolo (Perspectiva artística)"
+    }
+  ],
+  "boulevardialogo-butanta": [
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/01/11/52/cb88bc3b321f3d1fd2398e6a2697766500294e31.png",
+      "category": "plantas",
+      "caption": "83m² | 2 dorms c/ 1 suíte (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/18/11/06/a2da707400748759eb20756856e82943e36ffcca.png",
+      "category": "plantas",
+      "caption": "83m² I 2 Dorms (1 suíte) (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/24/09/25/0648282dba27887bc3ef042c7771cca230925449.png",
+      "category": "plantas",
+      "caption": "106m² | 2 dorms C/ lavabo (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/24/09/30/9a81c2f9ce83aae03883e7e352a6f256d9a1df94.png",
+      "category": "plantas",
+      "caption": "106m² | 3 dorms (1 suíte) C/ lavabo (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/24/09/32/b1bc64dd9f11bfcb8d3d70441a3bf855a6d050c4.png",
+      "category": "plantas",
+      "caption": "134m² | 2 suítes C/ lavabo (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/24/09/34/4464474b055288761ffe4164dff1437991fad4cf.png",
+      "category": "plantas",
+      "caption": "134m² | 3 suítes C/ lavabo (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/24/09/35/d45d5a92a3a7a9bd9291c5af92ed90a1fc3b8294.png",
+      "category": "plantas",
+      "caption": "275m² I Penthouse (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/24/09/37/01ff54f9e5be570c68dbc6f5ea41455a7b825b93.png",
+      "category": "plantas",
+      "caption": "218m² I Penthouse (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/25/17/53/a4f8140cb5dd313dde598d6cd11beb301a035d7e.png",
+      "category": "decorado",
+      "caption": "Living do apartamento de 134m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/25/14/40/c609afe0c46ab21d3bdd20513b0d79933132d83c.jpg",
+      "category": "decorado",
+      "caption": "Hall elevador privativo do apartamento de 134 m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/26/11/17/547fca401ebc50fb12481108c6f45dfade4f191b.jpg",
+      "category": "decorado",
+      "caption": "Terraço com churrasqueira a carvão do apartamento de 134 m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/26/10/04/1d188a5609eaadd81dd3f1ada89a1f5525d3f7b9.jpg",
+      "category": "decorado",
+      "caption": "Lavabo do apartamento de 134m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/25/14/41/bc7eb83fbdfa9a568d4acaa4f30f92080cca488d.jpg",
+      "category": "decorado",
+      "caption": "Cozinha do apartamento de 134 m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/25/14/45/3027066f124f38b23221b59420dc1cc91f101db9.jpg",
+      "category": "decorado",
+      "caption": "Quarto com suíte principal do apartamento de 134 m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/25/14/46/0aa6ad6cd10a7dea7a80ffa21fb337b12f50ae22.jpg",
+      "category": "decorado",
+      "caption": "Banheiro da suíte principal do apartamento de 134 m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/25/14/43/913ed8ad03be41cfb3810d26166f8294a9a7e43e.jpg",
+      "category": "decorado",
+      "caption": "Quarto 02 com suíte do apartamento de 134 m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/25/14/44/0147d02ae652f942304b5c0ce93aff1bde56726a.jpg",
+      "category": "decorado",
+      "caption": "Banheiro 02 do apartamento de 134 m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/25/14/44/ef150fbcd2f94c8e694b7d9521af3f4664e463c4.jpg",
+      "category": "decorado",
+      "caption": "Quarto 03 com suíte do apartamento de 134 m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/25/14/45/ba7a88b0c7086825f6576a35ccd8f9258e04014e.jpg",
+      "category": "decorado",
+      "caption": "Banheiro 03 do apartamento de 134 m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/02/14/55/2a09cfc350c2755d9830bab31fdc66b0abbedd91.png",
+      "category": "decorado",
+      "caption": "Living do apartamento de 83m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/25/11/02/24ead8d84d6e2a5570356abaf34695ccd478c977.jpg",
+      "category": "decorado",
+      "caption": "Terraço com churrasqueira a carvão do apartamento de 83 m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/25/11/03/d64d9aeea311c0914aa9ab132daad50997f5aad6.jpg",
+      "category": "decorado",
+      "caption": "Cozinha do apartamento de 83m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/25/11/09/57bce8449050b39ac9670c408c7cab4a3778fece.jpg",
+      "category": "decorado",
+      "caption": "Suíte do apartamento de 83m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/25/11/22/d2d4e5931806571e0d713c9a1f3ea56e77ece018.jpg",
+      "category": "decorado",
+      "caption": "Banheiro da Suíte do apartamento de 83m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/25/11/03/8a356b33ca77b3b445c05e652bb96ef6f989f7d4.jpg",
+      "category": "decorado",
+      "caption": "Dormitório 01 do apartamento de 83m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/25/11/08/737cb46dc65a100f95d9ff070be4521ebef9d083.jpg",
+      "category": "decorado",
+      "caption": "Banheiro 01 do apartamento de 83m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/05/15/54/f280eeeff135bbdb14ed041b71514bc0d8073ab6.png",
+      "category": "apartamento",
+      "caption": "Living - Apto 134m² (perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/05/15/56/260a6ee7caf1cb478e663a596c15ce80077fc65f.png",
+      "category": "apartamento",
+      "caption": "Terraço - Apto 134m² (perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/05/16/03/1b4d640f45994135b63e7dcc39fe094b8c7aa456.png",
+      "category": "apartamento",
+      "caption": "Living ampliado - Apto 106m² (perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/05/16/06/e6264d9d798e70238ba93f386d62e2916549a900.png",
+      "category": "apartamento",
+      "caption": "Terraço - Apto 106m² (perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/05/16/40/dab8b031da3b94c1c56a3fd970760eec5bec52ce.png",
+      "category": "apartamento",
+      "caption": "Living - Apto 83m² (perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/05/16/38/d4aa257b3638c27cbaef568a616d8c4f8a155a51.png",
+      "category": "apartamento",
+      "caption": "Terraço - Apto 83m² (perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/05/15/45/8a446d5ce4e3330803a1c15d56f9de03e63ad27f.jpg",
+      "category": "implantacao",
+      "caption": "Implantação térreo I Torre Home (Perspectiva preliminar)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/24/10/18/f926d1956dfffffcb58fd732f9f37e66f942eb72.png",
+      "category": "implantacao",
+      "caption": "Implantação 3º pavimento I Torre Home (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2025/08/25/11/43/cc8f31acaf5c126ea54d53234fa5b719c81fd3d1.jpg",
+      "category": "areas comuns",
+      "caption": "Fachada (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/24/10/51/72d04da82668ddf0374b0325047bec86bbfc85f0.png",
+      "category": "areas comuns",
+      "caption": "Boulevard (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/24/11/06/91618b6a1dc5817311c6ef6e2390bfb50da2df58.png",
+      "category": "areas comuns",
+      "caption": "Lobby com pé direito duplo (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/24/10/48/37e0f23b2fa9f730afecfe9de34b3430439d0793.png",
+      "category": "areas comuns",
+      "caption": "Piscina com raia de 25m (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/05/15/42/258224eb8b728fe6f67bc27ab388a2c513c3f538.png",
+      "category": "areas comuns",
+      "caption": "Churrasqueira com forno para pizza (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/24/10/53/e823193f9dd996b79c2ccaf51406de3700a46ffb.png",
+      "category": "areas comuns",
+      "caption": "Playground (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/24/10/58/ca7d4d3ae8e31c05cb0abd05d69d8cf498f4e827.png",
+      "category": "areas comuns",
+      "caption": "Quadra recreativa (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/01/11/34/0665e4c1a008a523337dd2f54f95232a39a13f91.png",
+      "category": "areas comuns",
+      "caption": "Espaço Delivery (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/01/11/38/f088ec83ad5936ff8e7770e639e3be1eb3449541.png",
+      "category": "areas comuns",
+      "caption": "Salão de festas com 144m² (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/24/10/04/40f69d12e53388c66470d36f94e80e4ad5797122.jpg",
+      "category": "areas comuns",
+      "caption": "Brinquedoteca (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/24/10/05/5d4e95e323c54972977154e1409a5c54489604aa.png",
+      "category": "areas comuns",
+      "caption": "Sauna e descanso sauna (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/10/24/11/01/ba1f2290476b721ecb51e9bb091cf709fc69e9fb.png",
+      "category": "areas comuns",
+      "caption": "Coliving (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/18/15/48/79994d0be0d48a68b82de723de61c598e7e4c1c3.png",
+      "category": "areas comuns",
+      "caption": "Fitness com 181m² (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/11/18/15/53/1b4921698858803d76ce5c54594861222b8a8485.png",
+      "category": "areas comuns",
+      "caption": "Salão gourmet com terraço coberto (Perspectiva artística)"
+    }
+  ],
   "orbya-vila-carrao-residences": [
     {
       "url": "https://www.dialogo.com.br/estatico/2026/06/08/08/20/b25673de1083d1431a5053a64a8f542bfcc0821a.png",
@@ -263,6 +792,16 @@ window.PROPERTY_GALLERIES = {
       "caption": "3 dorms (1 suíte) | 97m² - torre 2 (Perspectiva artística)"
     },
     {
+      "url": "https://www.dialogo.com.br/estatico/2026/09/22/09/35/e5e23f4bf275fc022470db2386613f8fa780258d.png",
+      "category": "plantas",
+      "caption": "Penthouse 3 Dorms (1 Suíte) I 122m² - torre 1 (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2026/09/22/09/42/0d3ab17b4371b809f4fff40a607f9c898ec35c2d.png",
+      "category": "plantas",
+      "caption": "Penthouse 3 Dorms (1 Suíte) I 168m² - torre 2 (Perspectiva artística)"
+    },
+    {
       "url": "https://www.dialogo.com.br/estatico/2026/06/10/15/14/27545f8805f95a27770a4fe12221c99c53fb70d3.jpeg",
       "category": "apartamento",
       "caption": "Living - 69m² - torre 2 (Perspectiva artística)"
@@ -381,83 +920,6 @@ window.PROPERTY_GALLERIES = {
       "url": "https://www.dialogo.com.br/estatico/2026/06/10/10/55/7810dc4e3d2ba25b74d4bacca529d90dae602852.jpeg",
       "category": "areas comuns",
       "caption": "Coworking (Perspectiva artística)"
-    }
-  ],
-  "way-vila-carrao": [
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/08/13/10/19/279a0a6c7bdea7e06fd6d0463aaa94fd3d3c674b.png",
-      "category": "plantas",
-      "caption": "1 Suíte | 39m² (prescpetiva arstísitca)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/08/13/10/19/6e8018000cf13c465041cfce8f159c43ac796080.png",
-      "category": "plantas",
-      "caption": "2 dorms | 44m² (prescpetiva arstísitca)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/08/12/09/54/4df74a8233290bfc9220e27428ae0a006db47ffc.png",
-      "category": "implantacao",
-      "caption": "Implantação Térreo (prespectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/08/12/09/54/b24dd0d7c4cbb089daa41e86cdd99bc31ae57089.png",
-      "category": "implantacao",
-      "caption": "9° pavimento (prespectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/08/12/09/54/e38979e8c5f20e11c864cac8982530ce76bf9e63.png",
-      "category": "implantacao",
-      "caption": "Implantação 21° (prespectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/08/11/08/52/e3320ace3c70c36c0a417717620f1a2280c572bd.jpg",
-      "category": "areas comuns",
-      "caption": "Fachada (prespectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/08/11/08/52/839c8369641a5b85d8fea72452366b962138ea32.jpeg",
-      "category": "areas comuns",
-      "caption": "Piscina adulto com solarium e ducha (prespectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/08/11/08/52/e5bbb86720de894d213610e3c3ca018c4ad7d292.jpeg",
-      "category": "areas comuns",
-      "caption": "Espaço Beauty (prespectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/08/13/10/48/b74bb7b1e31d024b8257cd88205cd1f6d604f457.jpg",
-      "category": "areas comuns",
-      "caption": "Lazer no 9° pavimento (prespectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/08/11/08/52/e5a892682a2377c64ae1543819f7b66a32400dde.jpeg",
-      "category": "areas comuns",
-      "caption": "Salão de festas | Capac. 19 pessoas sentadas. (prespectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/08/11/08/52/63759257018adb3b25afc65b05c089be9fdab3b2.jpeg",
-      "category": "areas comuns",
-      "caption": "Churrasqueira | Capac. 6 pessoas sentadas. (prespectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/08/11/08/52/0c600b78b54aff603648e2e991dadd36a7aadfb7.jpg",
-      "category": "areas comuns",
-      "caption": "Fitness (prespectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/08/11/08/52/626ec36e7e50fb0cf88d4fca2857f840d4f5b41e.jpeg",
-      "category": "areas comuns",
-      "caption": "Pub jogos (prespectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/08/11/08/52/ce07271f4e984bd77c4a2adf2bda5ef6f5f55276.jpeg",
-      "category": "areas comuns",
-      "caption": "Brinquedoteca (prespectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/08/11/08/52/b33eb11fdcc9791e86d8771eeccfdc15a0515310.jpeg",
-      "category": "areas comuns",
-      "caption": "Coworking | Capac.14 pessoas sentadas. (prespectiva artística)"
     }
   ],
   "mona-analia-franco": [
@@ -1151,375 +1613,61 @@ window.PROPERTY_GALLERIES = {
       "caption": "Playground (Perspectiva artística)"
     }
   ],
-  "landmark-santa-cruz-residences": [
+  "okena-moema-suites": [
     {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/23/16/14/f511d8f96dfd7306738684c8d4cb65ebd82062c4.png",
+      "url": "https://www.dialogo.com.br/estatico/2024/05/21/17/02/ee4ef4b2a1b30e87a94f443910148868742394e4.png",
       "category": "plantas",
-      "caption": "53m² | 2 Dorms (perspectiva artística)"
+      "caption": "Planta Studio - 37m² - Final 01 (Perspectiva artística)"
     },
     {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/17/19/30/1e60b07b02e9c40a453e6240177c66d56028594a.png",
+      "url": "https://www.dialogo.com.br/estatico/2024/05/21/17/02/604777e25459d43077ae01b418f2a016142e4bd5.png",
       "category": "plantas",
-      "caption": "75m² | 2 Dorms. (1 suíte) (perspectiva artística)"
+      "caption": "Planta Studio - 37m² - Final 02 (Perspectiva artística)"
     },
     {
-      "url": "https://www.dialogo.com.br/estatico/2026/02/05/09/17/90b625ddb7ea72c72a68d9a35ab80b591c0b3dc9.png",
+      "url": "https://www.dialogo.com.br/estatico/2024/05/21/17/02/7993bb0cda05d405091b080e301c704fccd79853.png",
       "category": "plantas",
-      "caption": "95m² | 3 Dorms. (1 suíte) (perspectiva artística)"
+      "caption": "Planta Studio - 37m² - Final 03 (Perspectiva artística)"
     },
     {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/29/16/29/29641f8e3d16a9fb9125cd85063c250e0b33d92b.png",
+      "url": "https://www.dialogo.com.br/estatico/2024/05/21/17/02/3caefa92d9ff0bbc9bbe92185bf144dcab753f5c.png",
       "category": "plantas",
-      "caption": "95m² | 2 Dorms. c/ lavabo (1 suíte) (perspectiva artística)"
+      "caption": "Planta Studio - 37m² - Final 04 (Perspectiva artística)"
     },
     {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/17/19/30/7e2a42cd5d50d5d164cf786b57ec9aa8d7b9444d.png",
+      "url": "https://www.dialogo.com.br/estatico/2024/05/21/17/02/4bc985b4c047bf4100798ed79e4384532faa85f8.png",
       "category": "plantas",
-      "caption": "131m² | 3 suítes c/ lavabo (perspectiva artística)"
+      "caption": "Planta Studio - 41m² - Final 05 (Perspectiva artística)"
     },
     {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/02/09/26/eac4951e536fbc445a9a068e161a2aa57835e1d5.png",
+      "url": "https://www.dialogo.com.br/estatico/2024/05/21/17/02/cc810d1e7fcce6b3bc8853509a2dff101a626148.png",
       "category": "plantas",
-      "caption": "Penthouse - 152m² | 3 Dorms. (1 suíte) c/ lavabo (perspectiva artística)"
+      "caption": "Planta Studio - 40m² - Final 06 (Perspectiva artística)"
     },
     {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/02/09/26/0e70a82409242782509c353d920c43535d02f719.png",
+      "url": "https://www.dialogo.com.br/estatico/2023/11/01/15/10/0e6b602511e412e63eb704b6d6ac4d8cba3aff4c.jpg",
       "category": "plantas",
-      "caption": "Penthouse - 174m² | 3 Dorms. (1 suíte) (perspectiva artística)"
+      "caption": "Plantas Studios (Perspectiva artística)"
     },
     {
-      "url": "https://www.dialogo.com.br/estatico/2026/02/05/09/17/c473e1148272b163593fe9eea25336c9eb7597ce.png",
-      "category": "plantas",
-      "caption": "Penthouse - 264m² | 3 suítes (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/01/10/24/45cbbc02e8a03cda849f9c4c779ffafbbe93018a.jpeg",
-      "category": "decorado",
-      "caption": "Living do apartamento 131m² (Foto do decorado)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/01/10/24/db1777e57d769320fad79c7ec58a8a71d67ef9cc.jpg",
-      "category": "decorado",
-      "caption": "Hall privativo (Foto do decorado)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/01/10/24/4a43964e372bb5b262ad5b2e7cf58cf67d6693b6.jpg",
-      "category": "decorado",
-      "caption": "Terraço com churrasqueira a carvão - 131m² (Foto do decorado)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/01/10/24/9b9545c1331404a36828019d4fa26ff8ce150782.jpg",
-      "category": "decorado",
-      "caption": "Terraço com churrasqueira a carvão - 131m² (Foto do decorado)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/01/10/24/45afebdb4e340252e02b5065771b5da71b88de39.jpg",
-      "category": "decorado",
-      "caption": "Cozinha - 131m² (Foto do decorado)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/01/10/24/afa4818f5d79246f68ee21a94e0ac1e682fb2960.jpg",
-      "category": "decorado",
-      "caption": "Espaço para Adega - 131m² (Foto do decorado)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/01/10/24/e2e1fe10c4722f8784ab624a265f6b5bbac6d97c.jpg",
-      "category": "decorado",
-      "caption": "Lavabo - (Foto do decorado)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/01/10/24/cca46eaefa7da07a7382ad979c36c071506932ab.jpg",
-      "category": "decorado",
-      "caption": "Suíte principal - 131m² (Foto do decorado)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/01/10/24/ca53ee84716ef23c22eccf89d35ce9ff49f38698.jpg",
-      "category": "decorado",
-      "caption": "Banheiro da suíte principal - 131m² (Foto do decorado)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/01/10/24/f8d7d893d7671a10e4458bd1baaf09f0a4b75fd1.jpg",
-      "category": "decorado",
-      "caption": "Banheiro da suíte 02 - 131m² (Foto do decorado)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/01/10/24/11920c99e1bf5a713e112252273f44593e59746d.jpg",
-      "category": "decorado",
-      "caption": "Suíte 02 - 131m² (Foto do decorado)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/01/10/24/df9ed6e856d3317844041e693c2d2c4d5194ff81.jpg",
-      "category": "decorado",
-      "caption": "Suíte 03 - 131m² (Foto do decorado)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/01/10/24/41ece3fa02f5a91cfec09246773c638839eb5e42.jpg",
-      "category": "decorado",
-      "caption": "Banheiro da suíte 03 - 131m² (Foto do decorado)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/02/09/33/82f069194d73c3e18bf2ac4366671515ce497a51.jpg",
+      "url": "https://www.dialogo.com.br/estatico/2023/11/01/15/11/6739caa475af738ff8d3081ae8a31a8ca3e21e93.jpg",
       "category": "apartamento",
-      "caption": "Terraço 1 suíte - 75m² (Perspectiva artística)"
+      "caption": "Living Studios (perspectiva artística)"
     },
     {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/03/08/51/4d958d231aa3bfa03c40ad10269b2de75f220113.jpg",
-      "category": "apartamento",
-      "caption": "Terraço 3 suítes - 95m² (Perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/02/09/33/0b5fb1b0d1335eb032569bef65852b7257f1d4d3.jpg",
-      "category": "apartamento",
-      "caption": "Terraço 3 suítes - 131m² (Perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/16/16/24/39f4768522f2618347b9415f924880eeae7aeac6.jpg",
-      "category": "apartamento",
-      "caption": "Living terraço 3 suítes - 131m² (Perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/10/10/40/a53296a953b0ef84f923d37b7ead833eb4e6ce44.png",
-      "category": "implantacao",
-      "caption": "Implantação lazer (Perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/01/26/17/28/b24f24665d448f15ae64b755ccfd49d2dbd05b06.png",
-      "category": "implantacao",
-      "caption": "Implantação 1º pavimento (Perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/01/26/17/27/3008195cf004a29ea899f4bc6446677dd0deefb6.png",
-      "category": "implantacao",
-      "caption": "Implantação 2º pavimento (Perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/02/19/08/24/5d915bb0c3898a1e797d9aa9dec47519dfc67ac5.jpg",
+      "url": "https://www.dialogo.com.br/estatico/2023/11/01/15/12/47b6c74a9a8ce2b62258e767646ded3b2e5dbc31.jpg",
       "category": "areas comuns",
-      "caption": "Acesso (perspectiva artística)"
+      "caption": "Lobby (perspectiva artística)"
     },
     {
-      "url": "https://www.dialogo.com.br/estatico/2026/02/19/08/24/3c1254bb5ef4607f18b30bc9bd7706e428c83f9e.jpg",
+      "url": "https://www.dialogo.com.br/estatico/2023/11/01/15/12/058acfad54371db137d0265ccb795c4a11dc0434.jpg",
       "category": "areas comuns",
-      "caption": "2º Acesso (perspectiva artística)"
+      "caption": "Salão de Festas (perspectiva artística)"
     },
     {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/02/09/17/9eac0042310860283828d3bfcd989382aedab546.jpg",
+      "url": "https://www.dialogo.com.br/estatico/2023/11/01/15/12/6e3dd5f07532135290d467794fc68f7fe6f6e2db.jpg",
       "category": "areas comuns",
-      "caption": "Lobby com pé-direito duplo (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/02/16/18/117ac2b6fd7da88158ad3048ff18904372850720.jpg",
-      "category": "areas comuns",
-      "caption": "Piscina Adulto c/ raia dupla de 25m (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/02/16/18/2d2c3a28de365d816fd72cabb5fa0902873ed133.jpg",
-      "category": "areas comuns",
-      "caption": "Quadra de beach tennis (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/01/20/09/36/63da87ed63c27945387d25bdb07cbd94a5115fcc.jpg",
-      "category": "areas comuns",
-      "caption": "Casa de campo c/ churrasqueira e spa externo c/ 134m² (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/02/16/18/e0dd8f83ef6b06a5737e3038fea9e264bdbe6ec2.jpg",
-      "category": "areas comuns",
-      "caption": "Churrasqueira c/ forno de pizza (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/02/09/17/365bc49ff5e875cbc777bfd1a3727c96548f61d0.jpeg",
-      "category": "areas comuns",
-      "caption": "Espaço Gourmet c/ 86m² (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/02/09/17/667577d943e706b21b8f62bf41bbf4034607ce71.jpg",
-      "category": "areas comuns",
-      "caption": "Espaço beauty e sala de massagem (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/01/20/09/40/b9e7d4da959decbcca16fcde4074a66d2306f972.jpg",
-      "category": "areas comuns",
-      "caption": "Fitness c/ 131m² (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/03/09/02/a961d1e6117d9b2be7e158cc715aa409b233cc6c.jpg",
-      "category": "areas comuns",
-      "caption": "Playground (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/10/10/11/05f5151f7a5e6d4226e17175e7689ddce7519927.png",
-      "category": "areas comuns",
-      "caption": "Sports Bar (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/02/09/17/56a4b3faac9db8e56ddb5c7a94fc7ae997548a1f.jpg",
-      "category": "areas comuns",
-      "caption": "Salão de jogos (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/02/09/17/caba858534412fe04d6c61724bfaebf22d534840.jpg",
-      "category": "areas comuns",
-      "caption": "Quadra recreativa c/ marcação para pickleball (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/02/16/18/8a903039c4a845c05cabae993dd4d7537a1ccbbd.jpg",
-      "category": "areas comuns",
-      "caption": "Salão de festas c/ 278m² (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/10/10/11/10763283978e34f2a1ea080c8ecd8542f9c0b74a.png",
-      "category": "areas comuns",
-      "caption": "Brinquedoteca c/ 83m² (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/02/09/17/f50537a1c8e26936bc6e1773cefb3e7cc9c18e1a.jpg",
-      "category": "areas comuns",
-      "caption": "Pet place (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2025/12/03/09/17/a78e2929e6e1cfbe780b127b68eaaf07f2518e29.jpg",
-      "category": "areas comuns",
-      "caption": "Coworking c/ salas de reunião (perspectiva artística)"
-    }
-  ],
-  "orbya-vila-carrao-home-spaces": [
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/06/08/09/26/13cde8eb53c058aeb0297cd64fd4abe87ecddf05.png",
-      "category": "plantas",
-      "caption": "26m² | Studio (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/06/08/09/26/526524e9228c38ff9fe55ebe30159f8e27019ef6.png",
-      "category": "plantas",
-      "caption": "27m² | 1 suíte (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/06/08/09/26/3e1e8e2d06cca17589b1127d2c57f60eb0a96d75.png",
-      "category": "plantas",
-      "caption": "41m² | 2 Dorms. (1 suíte) (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/06/08/09/26/71b2af59a5abff11134cdfb80731b2fa973fde04.png",
-      "category": "plantas",
-      "caption": "46m² | 2 Dorms. (1 suíte) (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/06/02/16/00/1c0c9dc7d772e1227f2e0902202982378c7f4683.jpg",
-      "category": "areas comuns",
-      "caption": "Acesso (Perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/06/02/16/00/3a93db0bc05cad1667655817ec87c9c1453c9265.jpg",
-      "category": "areas comuns",
-      "caption": "Lobby (Perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/06/02/16/00/c3ef89f816db7ddd4fefb5370bfa6050f2b4d8ea.jpg",
-      "category": "areas comuns",
-      "caption": "Piscina (Perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/06/02/16/00/4b1fd079b48d6f5edfe352e1aa5807f053575be5.jpg",
-      "category": "areas comuns",
-      "caption": "Sky Lounge (Perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/06/02/16/00/2ca028a0ddcd7937a779f49eef0fa81d0b0f01aa.jpg",
-      "category": "areas comuns",
-      "caption": "Fitness (Perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/06/02/16/00/60885e6c35a9041b93d65eb9a17e044485b142fd.jpg",
-      "category": "areas comuns",
-      "caption": "Salão de festas (Perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/06/02/16/00/2df56b9c60bff253f6d303f6d026895ee4484a2d.jpg",
-      "category": "areas comuns",
-      "caption": "Brinquedoteca (Perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/06/02/16/00/22ecb01dfc341a492eb50450ba2b58d081b6495c.jpg",
-      "category": "areas comuns",
-      "caption": "Lavanderia compartilhada (Perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/06/02/16/00/3fba2c694083706a427baea046bfe4422e6e53b1.jpg",
-      "category": "areas comuns",
-      "caption": "Coworking (Perspectiva artística)"
-    }
-  ],
-  "analia-franco-station": [
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/03/24/11/14/9e0f1c27da3eea5d661647526214fdc13714014a.png",
-      "category": "plantas",
-      "caption": "Planta 1 suíte - 30m² | torre 3 (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/03/24/11/14/1e739b49961045c19a314d0342e3e063321c7364.png",
-      "category": "plantas",
-      "caption": "Planta 2 dorms. - 44m² | torre 3 (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/05/04/16/13/f04213a84bd67545b5578534bfb1bbc509920916.png",
-      "category": "implantacao",
-      "caption": "Implantação Cobertura (Perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/03/24/14/52/56836c1bfd620df1b99053e454bb179a4479e926.jpg",
-      "category": "areas comuns",
-      "caption": "Fachada (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/03/24/14/53/3978ae9ce638806c7e5c80087a3c6f7aa2444316.jpg",
-      "category": "areas comuns",
-      "caption": "Acesso (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/01/14/35/18723193c855dd8976da4728cf8d5dc607110d96.jpg",
-      "category": "areas comuns",
-      "caption": "Piscina c/ solarium (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/08/14/27/50ee15eac47d8753a0f8637089a9528b523261b7.jpg",
-      "category": "areas comuns",
-      "caption": "Salão de festas (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/01/14/35/36ae6057d6c99b61259ea318bc3af685555ec182.jpg",
-      "category": "areas comuns",
-      "caption": "Pet Care (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/08/14/27/58c1bf20ced75adc9497d0f5c0d9207e4f2a7c47.jpg",
-      "category": "areas comuns",
-      "caption": "Pet place (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/08/14/27/3774cc6b901fae5f2f8adad264ae3e0cc42b3038.jpg",
-      "category": "areas comuns",
-      "caption": "Coliving (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/08/14/27/56e871f0c2c44721c620e2ae0e6260583505b2ed.jpg",
-      "category": "areas comuns",
-      "caption": "Sport Gourmet (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/08/14/27/8a4cb053826278b3cf7b8928c50891df4536edfe.jpg",
-      "category": "areas comuns",
-      "caption": "Lavanderia compartilhada (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/05/04/16/10/cf949a77840616976838642b35423f44b4a0afaa.jpg",
-      "category": "areas comuns",
-      "caption": "Fitness (perspectiva artística)"
-    },
-    {
-      "url": "https://www.dialogo.com.br/estatico/2026/04/08/14/27/5f934c7546b317c7a771c0b13827948eb0aa8a42.jpg",
-      "category": "areas comuns",
-      "caption": "Apoio gourmet (perspectiva artística)"
+      "caption": "Piscina (perspectiva artística)"
     }
   ],
   "way-guilhermina": [
@@ -1622,6 +1770,228 @@ window.PROPERTY_GALLERIES = {
       "url": "https://www.dialogo.com.br/estatico/2026/03/30/17/38/c7a84b81bef1f01f3bdd1f5b5f993ca9f5d2088a.jpeg",
       "category": "areas comuns",
       "caption": "Pet Place (perspectiva artística)"
+    }
+  ],
+  "the-grand-padre-adelino": [
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/12/11/08/1460e449c26b431c908a14942f8cffbfb7d96f86.png",
+      "category": "plantas",
+      "caption": "155m² | 4 Dorms. 2 suítes c/ lavabo (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/16/25/09ddcde165165377528f12b88f971e90d6a55c2c.png",
+      "category": "plantas",
+      "caption": "155m² | 03 Suítes c/ lavabo (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/12/11/09/f306d1d32abb15e6d9fe429a94dfc19cff6b2047.png",
+      "category": "plantas",
+      "caption": "125m² | 3 Suítes c/ lavabo (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2025/01/06/14/52/db32b1b8142e99e2b255b7f4d6a8deb492793c32.png",
+      "category": "plantas",
+      "caption": "125m² | 2 Suítes c/ lavabo (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/16/26/66d0a7167f9797ef6a30105010293a2491d8ee82.png",
+      "category": "plantas",
+      "caption": "117m² | 3 Dorms. 01 Suíte (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/16/26/97f3af076a89b824f71785e0ad63f29ff73e04de.png",
+      "category": "plantas",
+      "caption": "117m² | 02 Dorms. 1 Suíte (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/19/12/09/26f9955b6446ad08994be75f849d4675b6e75172.png",
+      "category": "plantas",
+      "caption": "74m² | 2 Suítes c/ lavabo (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2025/01/02/17/32/352c5d0e308ee84f9deb7004595ef937b5bd71df.png",
+      "category": "plantas",
+      "caption": "74m² | 1 Suíte c/ lavabo (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2025/02/12/14/28/f7ae20e3cfe171fd207c0b4eec5aa4e9f033483c.jpg",
+      "category": "decorado",
+      "caption": "Living do apartamento de 155m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2025/02/12/09/42/530f29ddb38621a25cf7b40e6eff1f5e74f5797d.jpg",
+      "category": "decorado",
+      "caption": "Terraço com churrasqueira a carvão - 155m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2025/10/27/11/45/8d00c9f31068282b2e5ae81b51b1e401dfd7a106.jpg",
+      "category": "decorado",
+      "caption": "Terraço com churrasqueira a carvão - 155m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2025/02/12/09/43/a7805072e3394a47bedd65d03397152faebfee2e.jpg",
+      "category": "decorado",
+      "caption": "Lavabo - 155m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2025/02/12/09/44/622ea5ae28cb930cfb6d062074e82f8a0fd577da.jpg",
+      "category": "decorado",
+      "caption": "Cozinha - 155m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2025/02/12/09/45/b5df39029c8c3d853a202a2b338d11a457f4a142.jpg",
+      "category": "decorado",
+      "caption": "Quarto com suíte principal - 155m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2025/02/12/09/46/c1d7cf54432d92e8685ab96f7d6684d55d19bddd.jpg",
+      "category": "decorado",
+      "caption": "Banheiro da suíte principal - 155m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2025/02/12/09/47/c8423a19667a6ffb1ebada38bcfc403792bbea59.jpg",
+      "category": "decorado",
+      "caption": "Quarto 02 com suíte - 155m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2025/02/12/09/48/a0cb24919a2e92ebf9746085b9c45a1cdd7abbd8.jpg",
+      "category": "decorado",
+      "caption": "Banheiro 02 - 155m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2025/02/12/09/53/3ce49085448abea37ba4a5ba1cdf42c8d66b73dd.jpg",
+      "category": "decorado",
+      "caption": "Quarto 03 com suíte - 155m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2025/02/12/09/58/b4dc23a68b0495289538eb60dd9fe7e551ec4ae9.jpg",
+      "category": "decorado",
+      "caption": "Banheiro 03 - 155m² (Foto do decorado)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2025/01/14/11/22/de861a1868285ed858f5832a95dc1caa0c042cd0.jpg",
+      "category": "apartamento",
+      "caption": "155M² | Living 3 Suítes (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/16/52/5ad51f676640b52c060710e674da1d31f4ea2603.jpg",
+      "category": "apartamento",
+      "caption": "155m² | Terraço 3 Suítes c/ lavabo (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/16/51/07719fad1c5f2d5fc389b9c3b3a776cff83d98ba.jpg",
+      "category": "apartamento",
+      "caption": "125m² | Terraço 3 Suítes c/ lavabo (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/16/54/70e71868ace267c7ee8acc87438b3c5ce49ca15c.jpg",
+      "category": "apartamento",
+      "caption": "117m² | Living 3 Dorms. 1 Suíte (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/16/53/1ebbf48cb80c1d9603f95d9058c5a2106e4188fc.jpg",
+      "category": "apartamento",
+      "caption": "117m² | Terraço 3 Dorms. 1 Suíte (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/16/53/2622983646f942b8673d6b1601c561d4c7bc42a9.jpg",
+      "category": "apartamento",
+      "caption": "74m² | Terraço 1 Suíte (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/16/34/7cc1c358e5784cb297b67400eb64de05a8406dca.png",
+      "category": "implantacao",
+      "caption": "Implantação do lazer (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/16/35/1080bc66850c45ab121b4a7234269098535a5ba2.png",
+      "category": "implantacao",
+      "caption": "Implantação do térreo (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/16/36/60c0a1bd9fc47aa65b6ad149b26ad98d261e5c39.png",
+      "category": "implantacao",
+      "caption": "Cobertura lazer (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2025/08/25/10/36/b5db47b9c6f51480bc8f7599562f2e8669fa38f7.jpg",
+      "category": "areas comuns",
+      "caption": "Fachada (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2025/01/29/16/43/719208388985b15d2adf4f960c86649bbfd369c5.jpg",
+      "category": "areas comuns",
+      "caption": "Acesso (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/09/11/03/50d010b22463476212e225de389b9e0d34e54d6a.jpg",
+      "category": "areas comuns",
+      "caption": "Lobby Residencial (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/15/40/ee6db9651d5c56d2c7b9c471aec73f2638605af5.jpg",
+      "category": "areas comuns",
+      "caption": "Piscina adulto com raia de 25m no 32º Pavimento (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/15/41/0b6e8bb3f4289a64ead09727101a0cc87a6d4e49.jpg",
+      "category": "areas comuns",
+      "caption": "Lounge no 32º Pavimento (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/15/35/e1f5cdbfaaa87fff74342e54fda8de9d0cd30076.jpg",
+      "category": "areas comuns",
+      "caption": "Fitness c/ 261m² no 32º Pavimento (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/15/34/829588bff8fc27af3981844d75143afad6279a21.jpg",
+      "category": "areas comuns",
+      "caption": "Descanso com Sauna (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/15/38/214f2b6bbaa95963996c6c5a15aa767aa7aae004.jpg",
+      "category": "areas comuns",
+      "caption": "Churrasqueira com forno para pizza (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/15/42/7031b899de4908c1e036426533b0d77c28e54d79.jpg",
+      "category": "areas comuns",
+      "caption": "Salão de festas (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/15/42/38bf78808fe294d91e053d4eb7f1735cc181d810.jpg",
+      "category": "areas comuns",
+      "caption": "Espaço Gourmet (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/15/36/2a9f2a2c686272e1196dfb759c83016c3c0bdadf.jpg",
+      "category": "areas comuns",
+      "caption": "Casa de Campo (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/09/11/05/4edaf4acbf08f22900f958397869b2a9c97a878e.jpg",
+      "category": "areas comuns",
+      "caption": "Sala jogos c/ terraço (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/16/08/4b22fcf4e47b56b9e01922126f20ae482c369c31.jpg",
+      "category": "areas comuns",
+      "caption": "Brinquedoteca (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/15/35/608bb7afa68447f2cb16508825c30d7fc3c29664.jpg",
+      "category": "areas comuns",
+      "caption": "Playground (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/15/51/18f5674dfe046a3c9d63c1235a668c0a226f7544.jpg",
+      "category": "areas comuns",
+      "caption": "Quadra recreativa (Perspectiva artística)"
+    },
+    {
+      "url": "https://www.dialogo.com.br/estatico/2024/12/06/15/59/5df2a1eb4ed77304f96f7e710ebf1ca9bb0a54a4.jpg",
+      "category": "areas comuns",
+      "caption": "Delivery (Perspectiva artística)"
     }
   ]
 };
