@@ -29,9 +29,7 @@
       <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
       <header class="site-header">
         <button class="menu-button" type="button" aria-label="Abrir menu" aria-controls="drawer" aria-expanded="false"><i></i><i></i><i></i></button>
-        <a class="header-logo" href="${asset("index.html")}" aria-label="Luana Donatti — página inicial">
-          <img src="${asset("assets/images/logo-luana-donatti.svg")}" alt="Luana Donatti" width="360" height="92">
-        </a>
+        <a class="header-wordmark" href="${asset("index.html")}" aria-label="Luana Donatti — página inicial">Luana Donatti</a>
         <span class="header-balance" aria-hidden="true"></span>
       </header>
       <div class="drawer-backdrop" data-drawer-close></div>
@@ -168,15 +166,13 @@
       const related = data.properties.filter((item) => item.slug !== property.slug).slice(0, 6);
       const gallery = window.PROPERTY_GALLERIES?.[property.slug] || [{ url: property.image, category: "empreendimento", caption: property.shortName }];
       const preferredGallery = gallery.filter((item) => !["plantas", "implantacao"].includes(item.category));
-      const previewGallery = (preferredGallery.length ? preferredGallery : gallery).slice(0, 6);
+      const previewGallery = (preferredGallery.length ? preferredGallery : gallery).slice(0, 4);
       const galleryCategories = [...new Set(gallery.map((item) => item.category))];
       const galleryItem = (item, index) => `
         <figure class="property-gallery-item" data-gallery-category="${escapeHtml(item.category)}" data-gallery-index="${index}">
           <button class="property-gallery-media" type="button" data-lightbox-open="${index}" aria-label="Ampliar: ${escapeHtml(item.caption)}">
             <img data-gallery-src="${item.url}" alt="${escapeHtml(item.caption)}" width="1200" height="800" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-            <span class="gallery-zoom" aria-hidden="true">Ampliar</span>
           </button>
-          <figcaption><small>${escapeHtml(item.category)}</small>${escapeHtml(item.caption)}</figcaption>
         </figure>`;
       const heroImage = imageUrl(property.image);
       target.innerHTML = `
